@@ -1,0 +1,114 @@
+/* Global styles */
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background-color: #000;
+	color: #fff;
+  }
+  
+  .container {
+	display: flex;
+	flex-direction: row;
+	height: 100vh;
+  }
+  
+  .row {
+	display: flex;
+	width: 100%;
+  }
+  
+  /* Colonne gauche */
+  .col-1 {
+	width: 60%;
+	text-align: center;
+	background-color: #000;
+	padding-top: 50px;
+  }
+  
+  .globe-logo {
+	width: 100px;
+	height: auto;
+  }
+  
+  h1 {
+	font-size: 2.5rem;
+	color: #fff;
+	margin: 10px 0;
+  }
+  
+  h2 {
+	font-size: 1.5rem;
+	color: #b3582c;
+	margin: 10px 0;
+  }
+  
+  .code-image {
+	width: 80%;
+	margin-top: 20px;
+  }
+  
+  /* Colonne droite */
+  .col-2 {
+	width: 20%;
+	background: linear-gradient(180deg, #1f1f55, #3c3c91);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 20px;
+	
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100vh;
+  }
+
+  .menu {
+	width: 100%;
+	text-align: right;
+  }
+  
+  .menu a {
+	font-size: 1.2rem;
+	color: #fff;
+	text-decoration: none;
+	margin: 20px 0;
+	display: block;
+  }
+  
+  .menu hr {
+	border: none;
+	border-top: 1px solid #fff;
+	margin: 10px 0;
+	width: 100%;
+  }
+  
+  /* Footer */
+  footer {
+	background: linear-gradient(180deg, #3c3c91, #1f1f55);
+	padding: 10px 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+  
+  .footer-container {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	justify-content: space-between;
+  }
+  
+
+  .menu-icon {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 20px;
+  }
+  
+  .menu-icon .bar {
+	width: 30px;
+	height: 4px;
+	background-color: #fff;
+  }
+  
