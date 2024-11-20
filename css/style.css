@@ -6,7 +6,7 @@ body {
   	background-repeat: no-repeat;
 	margin: 0;
 	font-family: "Kanit", sans-serif;
-	font-weight: 300;
+	font-weight: 400 ;
 	
 	color: #fff;
   }
@@ -63,8 +63,8 @@ body {
 	padding: 20px;
 	overflow: hidden;
 
-	opacity: 0.9;
-	transition: background 0.5s ease;
+	opacity: 1;
+	transition: 0.5s ease;
 
 	position: absolute;
 	top: 0;
@@ -78,18 +78,22 @@ body {
   }
   
   .menu a {
-	font-size: 1.2rem;
+	font-size: 1.4rem;
 	color: #fff;
 	text-decoration: none;
 	margin: 20px 0;
 	display: block;
   }
+
+  .menu a:hover {
+    font-weight: bold;
+  }
   
   .menu hr {
 	border: none;
 	border-top: 1px solid #fff;
-	margin: 10px 0;
-	width: 100%;
+	margin: 10px 0 0 auto;
+	width: 70%; 
   }
   
 
