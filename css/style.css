@@ -37,6 +37,12 @@ body::before {
 	text-align: center;
 	padding-top: 200px;
 }
+
+  .col-1 {
+	width: 80%;
+	text-align: center;
+	padding-top: 200px;
+  }
   
 .globe-logo {
 	width: 100px;
@@ -63,18 +69,17 @@ h2 {
 }
   
 .col-2 {
-	width: 20%;
-	background: linear-gradient(to right, rgba(0, 0, 0, 0.0) 0%,rgba(0, 0, 0, 0.1) 10%, rgba(0, 0, 0, 0.2) 20%, rgba(53,51,205,0.3) 30%, rgba(53,51,205,0.4) 40%, rgba(53,51,205,0.5) 50%,rgba(53,51,205,0.6) 60%, rgba(53,51,205,0.7) 70%, rgba(53,51,205,0.8) 80%, rgba(53,51,205,0.9) 90%, rgba(53,51,205,1) 100%) ;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	position: absolute;
-
-	top: 0;
-	right: 0;
-	height: 100vh;
-	padding: 20px;
-	z-index: 10;
+    width: 20%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 0.1) 10%, rgba(0, 0, 0, 0.2) 20%, rgba(53,51,205,0.3) 30%, rgba(53,51,205,0.4) 40%, rgba(53,51,205,0.5) 50%, rgba(53,51,205,0.6) 60%, rgba(53,51,205,0.7) 70%, rgba(53,51,205,0.8) 80%, rgba(53,51,205,0.9) 90%, rgba(53,51,205,1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    padding: 2%;
+    z-index: 10;
 }
 
 .menu {
@@ -82,20 +87,25 @@ h2 {
 	width: 100%;
 }
   
-.menu a {
+  .menu a {
 	font-size: 1.4rem;
 	color: #fff;
 	text-decoration: none;
 	margin: 20px 0;
 	display: block;
-}
+  }
+
+  .menu a:hover {
+    font-weight: bold;
+  }
   
 .menu hr {
-	width: 60%;
-	border: none;
-	border-top: 1px solid #fff;
-	margin-left: 150px;
-}
+    width: 60%;
+    border: none;
+    border-top: 1px solid #fff;
+    margin-left: 40%;
+  }
+  
 
 .menu-icon {
 	display: flex;
@@ -104,7 +114,7 @@ h2 {
 	height: 20px;
 }
   
-.menu-icon .bar {
+  .menu-icon .bar {
 	width: 20px;
 	height: 4px;
 	background-color: #fff;
