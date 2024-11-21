@@ -27,6 +27,8 @@ body::before {
   /* Couleur noire semi-transparente */
   background: rgba(0, 0, 0, 0.5);
   background-size: cover;
+
+  filter: blur(8px);
   /* Place la superposition derrière le contenu principal */
   z-index: -1;
   background-position: center;
