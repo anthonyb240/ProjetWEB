@@ -1,0 +1,232 @@
+body {
+    /* Image de fond sans floutage */
+    overflow: auto;
+    background-image: url('../images/code.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: "Lato", sans-serif; /* Changement de police */
+    font-weight: 300;
+    color: #fff;
+    position: relative;
+}
+
+/* Superposition sombre semi-transparente sur tout le corps */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* Superposition plus sombre */
+    z-index: -1; /* Derrière le contenu */
+}
+
+.gradient-container {
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(53, 51, 205, 1)); /* Dégradé noir à bleu */
+    padding: 10px; /* Espacement intérieur pour encadrer le titre */
+    border-radius: 12px; /* Coins arrondis */
+    display: inline-block; /* Ajuste la taille au contenu */
+}
+
+h2 {
+    font-family: "Zen Dots", sans-serif;
+    font-size: 2rem; 
+    color: white; 
+    margin: 10px;
+}
+
+p {
+    color: white;
+    font-size: 1rem;
+    margin: 10px 0; /* Marges verticales */
+}
+
+p:nth-of-type(2), p:nth-of-type(3), p:nth-of-type(4), p:nth-of-type(5), p:nth-of-type(6), p:nth-of-type(7) {
+    background-color: rgba(53, 51, 205);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px;
+}
+
+
+/* Conteneur principal avec un effet flexbox */
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Section gauche avec largeur ajustée et centrée */
+.gauche {
+    width: 75%;
+    text-align: center;
+    padding-top: 10%;
+}
+
+/* Logo de type globe avec taille fixe */
+.globe-logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Titres principaux avec style moderne */
+h1 {
+    font-family: "Poppins", sans-serif; /* Police moderne et lisible */
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre pour le contraste */
+    margin: 0;
+}
+
+
+/* Image de code avec un effet de zoom */
+.code-image {
+    width: 80%;
+    max-width: 600px;
+    margin-top: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Effet au survol de l'image de code */
+.code-image:hover {
+    transform: scale(1.1); /* Zoom léger */
+}
+
+/* Section droite avec dégradé élégant et contenu aligné */
+.droite {
+    width: 25%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(53, 51, 205, 0.9));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    padding: 2rem;
+    z-index: 10;
+    opacity: 0.9;
+}
+
+/* Menu dans la section droite */
+.menu {
+    text-align: left;
+    width: 100%;
+}
+
+/* Liens dans le menu avec animation de survol */
+.menu a {
+    font-size: 1.4rem;
+    color: #fff;
+    text-decoration: none;
+    margin: 15px 0;
+    display: block;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Effet au survol des liens */
+.menu a:hover {
+    font-weight: bold;
+    transform: scale(1.1); /* Agrandissement au survol */
+}
+
+/* Ligne de séparation dans le menu */
+.menu hr {
+    width: 50%;
+    border: none;
+    border-top: 1px solid #fff;
+    margin: 20px auto;
+}
+
+/* Icône du menu (hamburger) */
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 25px;
+    width: 30px;
+}
+
+/* Barre individuelle de l'icône hamburger */
+.menu-icon .bar {
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+}
+
+/* Styles pour les polices Zen Dots et Kanit */
+.zen-dots-regular {
+    font-family: "Zen Dots", serif;
+    font-weight: 400;
+}
+
+.kanit-thin {
+    font-family: "Kanit", serif;
+    font-weight: 100;
+}
+
+.kanit-light {
+    font-family: "Kanit", serif;
+    font-weight: 300;
+}
+
+.kanit-regular {
+    font-family: "Kanit", serif;
+    font-weight: 400;
+}
+
+.kanit-semibold {
+    font-family: "Kanit", serif;
+    font-weight: 600;
+}
+
+.kanit-bold {
+    font-family: "Kanit", serif;
+    font-weight: 700;
+}
+
+.kanit-extrabold {
+    font-family: "Kanit", serif;
+    font-weight: 800;
+}
+
+/* Media Queries pour les petits écrans */
+@media (max-width: 768px) {
+    /* Ajustement de la mise en page sur mobile */
+    .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .gauche {
+        width: 100%;
+        padding-top: 5%;
+    }
+
+    .droite { 
+        width: 100%;
+        position: static;
+        background: none;
+        padding: 1rem;
+        opacity: 1;
+    }
+
+    .menu a {
+        font-size: 1.2rem;
+    }
+
+    /* Redimensionnement de l'image */
+    .code-image {
+        width: 100%;
+    }
+    
+      
+}
