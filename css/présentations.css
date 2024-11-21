@@ -1,4 +1,4 @@
-/* présentations.css */
+ /* présentations.css */
 
 /* Style global */
 html, body {
@@ -8,8 +8,6 @@ html, body {
     background: black; /* Fond noir pur */
     color: white;
     height: 100%; /* S'assurer que le body prend toute la hauteur */
-    width: 100%;
-    overflow: hidden;
     display: flex;
     flex-direction: column; /* Permet de gérer la hauteur avec flexbox */
 }
@@ -32,24 +30,21 @@ h1 {
 .bio-text {
     display: flex; /* Mise en page avec l'image à gauche */
     gap: 40px; /* Espacement entre image et texte */
-    align-items: stretch; /* Aligne les blocs de texte en haut par rapport à l'image */
+    align-items: center; /* Aligne les blocs de texte en haut par rapport à l'image */
     flex: 1; /* Laissez ce conteneur occuper tout l'espace restant */
     margin: 0 auto;
     padding: 50px;
-    width: 100%; /* Prendre toute la largeur */
-    max-width: 100%;
-    min-height: 100vh;
-    box-sizing: border-box;
+    max-width: 1400px; /* Ajuster la largeur maximale du contenu */
 }
 
 /* Image principale */
 .bio-text img {
-    width: 60%; /* Augmenter la taille de l'image */
-    max-width: none;
+    width: 500px; /* Augmenter la taille de l'image */
     height: auto;
-    object-fit: contain;
+    object-fit: cover;
     border: 3px solid white; /* Bordure blanche autour de l'image */
     box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.7); /* Ombre plus forte */
+    align-self: center;
 }
 
 /* Conteneur des blocs de texte */
@@ -58,10 +53,7 @@ h1 {
     display: flex;
     flex-direction: column;
     gap: 40px; /* Espacement entre les blocs */
-    width: 35%; /* S'assurer que le texte prend toute la largeur de la page */
-    height: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
+    align-items: flex-start;
 }
 
 /* Bloc individuel avec un fond dégradé */
@@ -70,19 +62,15 @@ h1 {
     border-radius: 15px;
     background: linear-gradient(135deg, black, #2B2B7B, #4C4CFF); /* Dégradé avec noir */
     box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.8); /* Ombre encore plus marquée */
-    width: 100%; /* Bloc de texte prend toute la largeur */
-    flex-grow: 1;
-    min-height: 0;
 }
 
 /* Texte dans chaque bloc */
 .bio-block p {
     margin: 0;
-    font-size: 2rem; /* Texte beaucoup plus grand */
+    font-size: 1.5rem; /* Texte beaucoup plus grand */
     line-height: 2;
     color: white;
 }
-
 
 /* Accentuation des mots-clés */
 .bio-block strong {
