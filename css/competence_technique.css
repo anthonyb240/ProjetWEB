@@ -7,12 +7,40 @@ body {
 }
 
 /* Style pour la zone d'affichage du texte */
-#contenu {
-    margin-top: 20px;
-    padding: 15px;
-    border: 1px solid black;
-    background-color:linear-gradient(to right, rgba(0, 0, 0, 0.4) 30%, rgba(53,51,205,1) 100%);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+
+td {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+/* Ajouter un effet au survol des cellules */
+th:hover {
+    background-color: #3533cd; 
+    cursor: pointer;
+}
+
+.contenu {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    text-align: left;
+}
+
+.contenu.visible {
+    max-height: 500px;
+    opacity: 1;
 }
 
 /* Style pour les titres (h2) */
@@ -64,7 +92,7 @@ table {
     border-spacing: 10%;
     margin-top: 2%;
     font-family: Arial, sans-serif;
-  }
+}
   
 /* Style pour la légende du tableau */
 caption {
@@ -76,17 +104,14 @@ caption {
   
 /* Style pour les en-têtes de colonnes (th) */
 th {
-    background-color: #3533cd;
-    color: linear-gradient(to right, rgba(0, 0, 0, 0.4) 30%, rgba(53,51,205,0.6) 100%);
-    padding: 1%;
+    padding: 10px;
+    background-color: #3d52d5;
+    color: white;
     text-align: center;
-    border: none;
-    font-size: 1.1em;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    border-radius: 10px;
-}
-  
+    border-radius: 8px;
+    transition: background-color 0.3s;
+  }
   /* Style pour les lignes (tr) */
 tr:nth-child(even) {
     background-color: black;
@@ -94,15 +119,4 @@ tr:nth-child(even) {
   
 tr:nth-child(odd) {
     background-color: black;
-}
-  
-  /* Style pour les cellules d'en-tête (th) */
-th {
-    font-size: 1.1em; 
-}
-  
-  /* Ajouter un effet au survol des cellules */
-th:hover {
-    background-color: #3533cd; 
-    cursor: pointer;
 }

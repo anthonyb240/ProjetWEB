@@ -60,7 +60,7 @@ function afficherTexte(id) {
         <ul>
           <li>Internet des Objets (IoT) : Nous intégrons des solutions IoT pour la collecte de données en temps réel, la gestion d'appareils connectés, et l'analyse des flux de données dans des systèmes intelligents.</li>
           <li>Réalité Augmentée (AR) et Réalité Virtuelle (VR) : Nous explorons les possibilités offertes par la réalité augmentée et la réalité virtuelle pour des applications immersives dans les domaines du jeu, de la formation, et de la visualisation des données.</li>
-        </ul>
+          </ul>
       `
     };
   
@@ -69,6 +69,31 @@ function afficherTexte(id) {
       contenuDiv.innerHTML = contenus[id];
     } else {
       contenuDiv.innerHTML = "<p>Contenu introuvable.</p>";
-    }
   }
+}
 
+function cacherTexte() {
+  const contenuDiv = document.getElementById('contenu');
+  contenuDiv.innerHTML = "";  // Vider le contenu du div
+}
+
+// Ajouter un événement de clic sur les cellules du tableau
+const cellules = document.querySelectorAll('th');
+
+cellules.forEach(cellule => {
+  let estAffiche = false;  // Variable pour vérifier si le texte est affiché ou caché
+  
+  cellule.addEventListener('click', function() {
+    const id = cellule.getAttribute('data-id');
+    
+    // Si le texte est déjà affiché, le cacher
+    if (estAffiche) {
+      cacherTexte();
+      estAffiche = false;
+    } else {
+      // Afficher le texte associé à la cellule
+      afficherTexte(id);
+      estAffiche = true;
+    }
+  });
+});
