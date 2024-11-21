@@ -10,14 +10,48 @@ html, body {
 }
 
 #titre {
-  text-align: center;
+  box-sizing: border-box;
+  text-align: right;
+  font-family: "Zen Dots",sans-serif;
   background: linear-gradient(90deg, black, #2B2B7B, #4C4CFF); /* Dégradé partant du noir */
   margin: 0;
-  padding: 20px 0;
+  padding: 20px 20px 20px 0; 
   font-size: 2.5rem;
   text-transform: uppercase;
   font-weight: 600;
   color: white;
+}
+
+#page {
+  flex-grow: 1; /* Prend tout l’espace restant */
+  overflow: hidden; /* Empêche les débordements */
+  display: flex;
+
+}
+
+#hand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: auto; 
+}
+
+#commentaire {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #b3582c;
+  font-size: 3vw; 
+  font-weight: 600
+
+}
+
+#instruction {
+  display:flex;
+  justify-content: center;
+  text-align: center;
+  font-style: italic;
 }
 
 
