@@ -35,13 +35,13 @@ body::before {
 /* Conteneur principal pour la mise en page */
 .container {
 	display: flex; /* Active la flexbox */
-	flex-direction: row; /* Aligne les enfants en ligne */
+	flex-direction: row;
 	height: 100vh; /* Hauteur égale à la hauteur de la fenêtre */
 }
 
 /* Rangée générique prenant toute la largeur */
 .row {
-	display: flex; /* Flexbox pour les éléments enfants */
+	display: flex;
 	width: 100%; /* Largeur totale */
 }
 
@@ -77,7 +77,7 @@ h2 {
 /* Image de code dans la section gauche */
 .code-image {
 	width: 80%; /* Largeur proportionnelle */
-	margin-top: 20px; /* Espacement en haut */
+	margin-top: 40%; /* Espacement en haut */
 }
 
 /* Section de droite occupant 20% avec un dégradé visuel */
