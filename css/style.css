@@ -49,7 +49,7 @@ body::before {
 .gauche {
 	width: 80%; /* Largeur occupée */
 	text-align: center; /* Centrage horizontal du texte */
-	padding-top: 200px; /* Espacement du contenu depuis le haut */
+	padding-top: calc(15% - 10px); /* Espacement du contenu depuis le haut */
 }
 
 /* Style pour le logo globe */
@@ -77,7 +77,7 @@ h2 {
 /* Image de code dans la section gauche */
 .code-image {
 	width: 80%; /* Largeur proportionnelle */
-	margin-top: 40%; /* Espacement en haut */
+	margin-top: 50%; /* Espacement en haut */
 }
 
 /* Section de droite occupant 20% avec un dégradé visuel */
