@@ -12,7 +12,7 @@ html, body {
 
 /* Titre principal */
 h1 {
-    text-align: center;
+    text-align: right;
     background: linear-gradient(90deg, #000, #2B2B7B, #4C4CFF);
     margin: 0;
     padding: 30px 0;
