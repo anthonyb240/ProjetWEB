@@ -1,0 +1,31 @@
+
+/* Conteneur de la grille d'images */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(13, 1fr); /* 5 colonnes égales */
+    gap: 16px; /* Espace entre les éléments */
+    width: 100%;
+    max-width: 2000px;
+    padding: 16px; /* Espacement intérieur pour éviter que le contenu touche les bords */
+    box-sizing: border-box; /* Assure que le padding ne dépasse pas la largeur totale */
+}
+
+/* Style des éléments de la grille */
+.image-item {
+    display: flex;
+    justify-content: center;  /* Centre l'image horizontalement */
+    align-items: center;      /* Centre l'image verticalement */
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    aspect-ratio: 1;
+}
+
+/* Style des images */
+.image-item img {
+    max-width: 100%;  /* L'image s'adapte à la largeur de la case */
+    max-height: 100%; /* L'image s'adapte à la hauteur de la case */
+    object-fit: contain; /* Maintient le ratio de l'image tout en remplissant la case */
+    display: block; /* Supprime l'espace sous l'image */
+}
+
