@@ -1,7 +1,7 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
+    background-color: black;
+    color: white;
     margin: 0;
     padding: 20px;
 }
@@ -10,16 +10,16 @@ body {
 #contenu {
     margin-top: 20px;
     padding: 15px;
-    border: 1px solid #ddd;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
+    background-color:linear-gradient(to right, rgba(0, 0, 0, 0.4) 30%, rgba(53,51,205,1) 100%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
 }
 
 /* Style pour les titres (h2) */
 h2 {
-    color: #4CAF50;
+    color: #3533cd;
     font-size: 2rem;
-    border-bottom: 2px solid #4CAF50;
+    border-bottom: 2px solid #3533cd;
     padding-bottom: 5px;
 }
 
@@ -34,6 +34,7 @@ p {
 ul {
     padding-left: 20px;
     margin-top: 10px;
+    color: white;
 }
 
 /* Style pour les éléments de la liste */
@@ -41,10 +42,6 @@ li {
     font-size: 1rem;
     margin-bottom: 10px;
     line-height: 1.5;
-}
-
-li strong {
-    color: #FF5722; /* Couleur spécifique pour les mots en gras */
 }
 
 /* Ajouter des marges et de l'espace autour des éléments */
@@ -63,7 +60,8 @@ h1 {
 /* Style général pour le tableau */
 table {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: separate;
+    border-spacing: 10%;
     margin-top: 2%;
     font-family: Arial, sans-serif;
   }
@@ -78,23 +76,24 @@ caption {
   
 /* Style pour les en-têtes de colonnes (th) */
 th {
-    background-color: green;
-    color: white;
+    background-color: #3533cd;
+    color: linear-gradient(to right, rgba(0, 0, 0, 0.4) 30%, rgba(53,51,205,0.6) 100%);
     padding: 1%;
     text-align: center;
-    border: 1px solid #ddd;
+    border: none;
     font-size: 1.1em;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    border-radius: 10px;
 }
   
   /* Style pour les lignes (tr) */
 tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: black;
 }
   
 tr:nth-child(odd) {
-    background-color: #fff;
+    background-color: black;
 }
   
   /* Style pour les cellules d'en-tête (th) */
@@ -104,6 +103,6 @@ th {
   
   /* Ajouter un effet au survol des cellules */
 th:hover {
-    background-color: #45a049; 
+    background-color: #3533cd; 
     cursor: pointer;
 }
