@@ -14,6 +14,13 @@ body {
 	position: relative;
 }
 
+html, body {
+    overflow: hidden; /* Désactive le défilement */
+    height: 100%; /* Définit une hauteur fixe pour le contenu */
+    position: relative; /* Nécessaire pour que la page reste figée */
+}
+
+
 /* Superposition sombre semi-transparente sur tout le corps */
 body::before {
   /* Contenu vide utilisé pour l'effet de superposition */
