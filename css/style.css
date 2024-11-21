@@ -54,14 +54,14 @@ body::before {
 
 /* Style pour le logo globe */
 .globe-logo {
-	width: 100px; /* Largeur fixe */
+	width: 130px; /* Largeur fixe */
 	height: auto; /* Garde le ratio de l'image */
 }
 
 /* Style pour les titres de niveau 1 */
 h1 {
 	font-family: "Zen Dots", sans-serif; /* Police décorative */
-	font-size: 2.5rem; /* Taille de police */
+	font-size: 3.5rem; /* Taille de police */
 	color: #fff; /* Couleur blanche */
 	margin: 10px 0; /* Marges verticales */
 }
@@ -69,7 +69,7 @@ h1 {
 /* Style pour les titres de niveau 2 */
 h2 {
 	font-family: "Zen Dots", sans-serif; /* Même police décorative */
-	font-size: 1.5rem; /* Taille de police plus petite */
+	font-size: 2.5rem; /* Taille de police plus petite */
 	color: #b3582c; /* Couleur marron orangé */
 	margin: 10px 0; /* Marges verticales */
 }
