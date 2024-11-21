@@ -1,3 +1,35 @@
+/* Styles de base pour le corps de la page */
+body {
+    /* Image de fond avec positionnement centré et couverture totale */
+	background-color: rgb(0, 0, 0);
+  	/* Police principale pour tout le contenu de la page */
+	font-family: "Kanit", sans-serif;
+  	/* Poids de la police défini à light par défaut */
+	font-weight: 300;
+  	/* Nécessaire pour positionner correctement les éléments relatifs */
+	position: relative;
+}
+
+/* Style pour les titres de niveau 2 */
+h2 {
+	font-family: "Zen Dots", sans-serif; /* Même police décorative */
+	font-size: 2.5rem; /* Taille de police plus petite */
+	color: rgba(53,51,205); /* Couleur marron orangé */
+	margin: 10px 0; /* Marges verticales */
+}
+
+h3 {
+	font-family: "Zen Dots", sans-serif; /* Police décorative */
+	font-size: 1.5rem; /* Taille de police */
+	color: #ffffff; /* Couleur blanche */
+	margin: 10px 0; /* Marges verticales */
+}
+
+p {
+    font-family: "Arial", sans-serif;
+    color: white;
+    margin: 10px 0; /* Marges verticales */
+}
 
 /* Conteneur de la grille d'images */
 .image-grid {
@@ -19,6 +51,7 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     aspect-ratio: 1;
+    background-color: white; /* Couleur de fond spécifique pour chaque case */
 }
 
 /* Style des images */
