@@ -1,0 +1,122 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Style pour la zone d'affichage du texte */
+
+td {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+/* Ajouter un effet au survol des cellules */
+th:hover {
+    background-color: #3533cd; 
+    cursor: pointer;
+}
+
+.contenu {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    text-align: left;
+}
+
+.contenu.visible {
+    max-height: 500px;
+    opacity: 1;
+}
+
+/* Style pour les titres (h2) */
+h2 {
+    color: #3533cd;
+    font-size: 2rem;
+    border-bottom: 2px solid #3533cd;
+    padding-bottom: 5px;
+}
+
+/* Style pour les paragraphes (p) */
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* Style pour la liste non ordonnée */
+ul {
+    padding-left: 20px;
+    margin-top: 10px;
+    color: white;
+}
+
+/* Style pour les éléments de la liste */
+li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* Ajouter des marges et de l'espace autour des éléments */
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style pour le texte de la zone d'affichage */
+#contenu p {
+    font-style: italic;
+    color: #555;
+}
+  
+/* Style général pour le tableau */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 10%;
+    margin-top: 2%;
+    font-family: Arial, sans-serif;
+}
+  
+/* Style pour la légende du tableau */
+caption {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2%;
+    text-align: center;
+}
+  
+/* Style pour les en-têtes de colonnes (th) */
+th {
+    padding: 10px;
+    background-color: #3d52d5;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+  }
+  /* Style pour les lignes (tr) */
+tr:nth-child(even) {
+    background-color: black;
+}
+  
+tr:nth-child(odd) {
+    background-color: black;
+}

@@ -1,3 +1,44 @@
+body {
+    background-color: rgb(0, 0, 0);
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    position: relative;
+}
+
+.gradient-container {
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(53, 51, 205, 1)); /* Dégradé noir à bleu */
+    padding: 10px; /* Espacement intérieur pour encadrer le titre */
+    border-radius: 12px; /* Coins arrondis */
+    display: inline-block; /* Ajuste la taille au contenu */
+}
+
+h2 {
+    font-family: "Zen Dots", sans-serif;
+    font-size: 2rem; 
+    color: white; 
+    margin: 10px;
+}
+
+p {
+    color: white;
+    font-size: 1rem;
+    margin: 10px 0; /* Marges verticales */
+}
+
+p:nth-of-type(2), p:nth-of-type(3), p:nth-of-type(4) {
+    background-color: rgba(53, 51, 205);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-family: "Zen Dots", sans-serif;
+    font-size: 1.5rem; /* Taille de police */
+    color: #ffffff; /* Couleur blanche */
+    margin: 10px 0; /* Marges verticales */
+}
 
 /* Conteneur de la grille d'images */
 .image-grid {
@@ -19,13 +60,13 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     aspect-ratio: 1;
+    background-color: white; /* Couleur de fond spécifique pour chaque case */
 }
 
 /* Style des images */
 .image-item img {
-    max-width: 100%;  /* L'image s'adapte à la largeur de la case */
-    max-height: 100%; /* L'image s'adapte à la hauteur de la case */
+    max-width: 95%;  /* L'image s'adapte à la largeur de la case */
+    max-height: 95%; /* L'image s'adapte à la hauteur de la case */
     object-fit: contain; /* Maintient le ratio de l'image tout en remplissant la case */
     display: block; /* Supprime l'espace sous l'image */
 }
-
