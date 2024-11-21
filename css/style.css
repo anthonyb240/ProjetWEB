@@ -56,7 +56,7 @@ body::before {
 
 /* Style pour le logo globe */
 .globe-logo {
-	width: 100px; /* Largeur fixe */
+	width: 130px; /* Largeur fixe */
 	height: auto; /* Garde le ratio de l'image */
 }
 
