@@ -1,0 +1,109 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Style pour la zone d'affichage du texte */
+#contenu {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style pour les titres (h2) */
+h2 {
+    color: #4CAF50;
+    font-size: 2rem;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 5px;
+}
+
+/* Style pour les paragraphes (p) */
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* Style pour la liste non ordonnée */
+ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+/* Style pour les éléments de la liste */
+li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+li strong {
+    color: #FF5722; /* Couleur spécifique pour les mots en gras */
+}
+
+/* Ajouter des marges et de l'espace autour des éléments */
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style pour le texte de la zone d'affichage */
+#contenu p {
+    font-style: italic;
+    color: #555;
+}
+  
+/* Style général pour le tableau */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2%;
+    font-family: Arial, sans-serif;
+  }
+  
+/* Style pour la légende du tableau */
+caption {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2%;
+    text-align: center;
+}
+  
+/* Style pour les en-têtes de colonnes (th) */
+th {
+    background-color: green;
+    color: white;
+    padding: 1%;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+  /* Style pour les lignes (tr) */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+  
+tr:nth-child(odd) {
+    background-color: #fff;
+}
+  
+  /* Style pour les cellules d'en-tête (th) */
+th {
+    font-size: 1.1em; 
+}
+  
+  /* Ajouter un effet au survol des cellules */
+th:hover {
+    background-color: #45a049; 
+    cursor: pointer;
+}
