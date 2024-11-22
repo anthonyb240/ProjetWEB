@@ -1,5 +1,4 @@
 /* PAGE INDEX */
-
 /* Styles de base pour le corps de la page */
 body {
     /* Image de fond avec positionnement centré et couverture totale */
@@ -15,11 +14,10 @@ body {
 }
 
 html, body {
-    overflow: hidden; /* Désactive le défilement */
-    height: 100%; /* Définit une hauteur fixe pour le contenu */
-    position: relative; /* Nécessaire pour que la page reste figée */
+	overflow: hidden;
+	height:100%;
+	position:relative;
 }
-
 
 /* Superposition sombre semi-transparente sur tout le corps */
 body::before {
@@ -58,12 +56,12 @@ body::before {
 .gauche {
 	width: 80%; /* Largeur occupée */
 	text-align: center; /* Centrage horizontal du texte */
-	padding-top: calc(15% - 10px); /* Espacement du contenu depuis le haut */
+	padding-top: calc(15% - 1%); /* Espacement du contenu depuis le haut */
 }
 
 /* Style pour le logo globe */
 .globe-logo {
-	width: 130px; /* Largeur fixe */
+	width: 13%; /* Largeur fixe */
 	height: auto; /* Garde le ratio de l'image */
 }
 
@@ -72,7 +70,7 @@ h1 {
 	font-family: "Zen Dots", sans-serif; /* Police décorative */
 	font-size: 3.5rem; /* Taille de police */
 	color: #fff; /* Couleur blanche */
-	margin: 10px 0; /* Marges verticales */
+	margin: 1% 0; /* Marges verticales */
 }
 
 /* Style pour les titres de niveau 2 */
@@ -80,7 +78,7 @@ h2 {
 	font-family: "Zen Dots", sans-serif; /* Même police décorative */
 	font-size: 2.5rem; /* Taille de police plus petite */
 	color: #b3582c; /* Couleur marron orangé */
-	margin: 10px 0; /* Marges verticales */
+	margin: 1% 0; /* Marges verticales */
 }
 
 /* Image de code dans la section gauche */
@@ -116,7 +114,7 @@ h2 {
 	font-size: 1.4rem; /* Taille des liens */
 	color: #fff; /* Couleur blanche */
 	text-decoration: none; /* Supprime le soulignement */
-	margin: 20px 0; /* Marges verticales */
+	margin: 5% 0; /* Marges verticales */
 	display: block; /* Prend toute la largeur */
 }
 
@@ -138,13 +136,13 @@ h2 {
 	display: flex; /* Flexbox pour les barres */
 	flex-direction: column; /* Empile les barres verticalement */
 	justify-content: space-between; /* Espacement entre les barres */
-	height: 20px; /* Hauteur totale */
+	height: 2%; /* Hauteur totale */
 }
 
 /* Barre individuelle de l'icône */
 .menu-icon .bar {
-	width: 20px; /* Largeur fixe */
-	height: 4px; /* Épaisseur de la barre */
+	width: 2%; /* Largeur fixe */
+	height: 0.4%; /* Épaisseur de la barre */
 	background-color: #fff; /* Couleur blanche */
 }
 
@@ -160,12 +158,12 @@ h2 {
 }
 
 .button {
-	padding: 10px 20px;
+	padding: 1% 2%;
 	background-color: #007BFF;
 	color: white;
 	border: none;
 	cursor: pointer;
-	border-radius: 5px;
+	border-radius: 0.5%;
 }
 
 .button:hover {
