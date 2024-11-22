@@ -1,5 +1,4 @@
 /* PAGE INDEX */
-
 /* Styles de base pour le corps de la page */
 body {
     /* Image de fond avec positionnement centré et couverture totale */
@@ -56,7 +55,7 @@ body::before {
 
 /* Style pour le logo globe */
 .globe-logo {
-	width: 130px; /* Largeur fixe */
+	width: 13%; /* Largeur fixe */
 	height: auto; /* Garde le ratio de l'image */
 }
 
@@ -73,7 +72,7 @@ h2 {
 	font-family: "Zen Dots", sans-serif; /* Même police décorative */
 	font-size: 2.5rem; /* Taille de police plus petite */
 	color: #b3582c; /* Couleur marron orangé */
-	margin: 10px 0; /* Marges verticales */
+	margin: 1% 0; /* Marges verticales */
 }
 
 /* Image de code dans la section gauche */
@@ -109,7 +108,7 @@ h2 {
 	font-size: 1.4rem; /* Taille des liens */
 	color: #fff; /* Couleur blanche */
 	text-decoration: none; /* Supprime le soulignement */
-	margin: 20px 0; /* Marges verticales */
+	margin: 5% 0; /* Marges verticales */
 	display: block; /* Prend toute la largeur */
 }
 
