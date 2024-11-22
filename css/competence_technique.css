@@ -154,9 +154,8 @@ tr:nth-child(odd) {
 
 /* Style pour les titres (h2) */
 h2 {
-    color: #3533cd;
-    font-size: 2rem;
-    border-bottom: 2px solid #3533cd;
+    color: #fff;
+    font-size: 2.5rem;
     padding-bottom: 5px;
 }
 
