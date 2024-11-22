@@ -15,27 +15,67 @@ html, body {
 
 /* Titre principal */
 h1 {
+    /* Centrage horizontal du texte */
     text-align: center;
+
+    /* Dégradé en fond horizontal allant du noir au bleu */
     background: linear-gradient(90deg, #000, #2B2B7B, #4C4CFF);
+
+    /* Suppression des marges par défaut */
     margin: 0;
+
+    /* Espacement interne au-dessus et en-dessous du texte */
     padding: 30px 0;
+
+    /* Taille du texte très grande pour un titre principal */
     font-size: 4rem;
+
+    /* Conversion du texte en majuscules */
     text-transform: uppercase;
+
+    /* Police spécifique pour le titre (Zen Dots) */
     font-family: 'Zen Dots', sans-serif;
+
+    /* Épaisseur du texte */
     font-weight: 600;
+
+    /* Couleur du texte blanche */
     color: #fff;
+
+    /* Ombre sous le titre pour un effet 3D */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Sous-titres */
 h2 {
-    font-size: 2.5rem;
+    /* Centrage horizontal du texte */
     text-align: center;
-    margin: 20px 0;
-    color: #4C4CFF;
-    border-bottom: 2px solid #4C4CFF;
-    padding-bottom: 10px;
+
+    /* Dégradé en fond horizontal allant du noir au bleu */
+    background: linear-gradient(90deg, #000, #2B2B7B, #4C4CFF);
+
+    /* Suppression des marges par défaut */
+    margin: 0;
+
+    /* Espacement interne au-dessus et en-dessous du texte */
+    padding: 30px 0;
+
+    /* Taille du texte très grande pour un titre principal */
+    font-size: 2.5rem;
+
+    /* Conversion du texte en majuscules */
     text-transform: uppercase;
+
+    /* Police spécifique pour le titre (Zen Dots) */
+    font-family: 'Zen Dots', sans-serif;
+
+    /* Épaisseur du texte */
+    font-weight: 600;
+
+    /* Couleur du texte blanche */
+    color: #fff;
+
+    /* Ombre sous le titre pour un effet 3D */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Paragraphe principal */
@@ -79,6 +119,8 @@ th:hover {
     background: #4C4CFF;
     transform: scale(1.05);
     cursor: pointer;
+    border: 3px solid #fff; /* Couleur blanche et épaisseur de 3px */
+    border-radius: 10px; /* Conserve les coins arrondis */
 }
 
 /* Lignes alternées */
