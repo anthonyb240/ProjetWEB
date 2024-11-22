@@ -1,55 +1,159 @@
-body {
-    background-color: rgb(0, 0, 0);
-    font-family: "Kanit", sans-serif;
-    font-weight: 300;
-    position: relative;
+html, body {
+    /* Police globale du document, utilisant la police "Kanit" */
+    font-family: 'Kanit', sans-serif;
+
+    /* Suppression des marges et paddings par défaut */
+    margin: 0;
+    padding: 0;
+
+    /* Fond noir pour la page entière */
+    background: #000;
+
+    /* Couleur du texte blanche pour contraste avec le fond */
+    color: #fff;
+
+    /* Hauteur totale de la page */
+    height: 100%;
+
+    /* Utilisation de Flexbox pour structurer les éléments principaux */
+    display: flex;
+    flex-direction: column; /* Les éléments seront empilés verticalement */
+ 
 }
 
-.gradient-container {
-    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(53, 51, 205, 1)); /* Dégradé noir à bleu */
-    padding: 10px; /* Espacement intérieur pour encadrer le titre */
-    border-radius: 12px; /* Coins arrondis */
-    display: inline-block; /* Ajuste la taille au contenu */
+/* Titre principal */
+h1 {
+    /* Centrage horizontal du texte */
+    text-align: center;
+
+    /* Dégradé en fond horizontal allant du noir au bleu */
+    background: linear-gradient(90deg, #000, #2B2B7B, #4C4CFF);
+
+    /* Suppression des marges par défaut */
+    margin: 0;
+
+    /* Espacement interne au-dessus et en-dessous du texte */
+    padding: 30px 0;
+
+    /* Taille du texte très grande pour un titre principal */
+    font-size: 4rem;
+
+    /* Conversion du texte en majuscules */
+    text-transform: uppercase;
+
+    /* Police spécifique pour le titre (Zen Dots) */
+    font-family: 'Zen Dots', sans-serif;
+
+    /* Épaisseur du texte */
+    font-weight: 600;
+
+    /* Couleur du texte blanche */
+    color: #fff;
+
+    /* Ombre sous le titre pour un effet 3D */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-h2 {
-    font-family: "Zen Dots", sans-serif;
-    font-size: 2rem; 
-    color: white; 
-    margin: 10px;
+/* Section principale */
+.bio-text {
+    /* Activation de Flexbox pour organiser les éléments enfants */
+    display: flex;
+
+    /* Permet le retour à la ligne des éléments si l'espace est insuffisant */
+    flex-wrap: wrap;
+
+    /* Espacement entre les éléments enfants */
+    gap: 30px;
+
+    /* Centre les éléments sur l'axe vertical */
+    align-items: center;
+
+    /* Centre le conteneur sur la page */
+    margin: 0 auto;
+
+    /* Espacement interne autour du contenu */
+    padding: 50px;
+
+    /* Largeur maximale du conteneur */
+    max-width: 1200px;
 }
 
-p {
-    color: white;
-    font-size: 1rem;
-    margin: 10px 0; /* Marges verticales */
+/* Conteneur des blocs */
+.text-container {
+    /* Permet une extension flexible de l'espace */
+    flex: 1;
+
+    /* Utilise Flexbox pour disposer les blocs en colonne */
+    display: flex;
+    flex-direction: column;
+
+    /* Espacement vertical entre les blocs */
+    gap: 20px;
 }
 
-p:nth-of-type(2), p:nth-of-type(3), p:nth-of-type(4) {
-    background-color: rgba(53, 51, 205);
+/* Bloc individuel */
+.bio-block {
+    /* Espacement interne autour du contenu */
     padding: 20px;
+
+    /* Bords arrondis pour un effet plus doux */
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgb(239, 239, 255);
-    margin-bottom: 30px;
+
+    /* Fond en dégradé diagonal (noir vers bleu) */
+    background: linear-gradient(135deg, #000, #2B2B7B, #4C4CFF);
+
+    /* Ombre portée pour créer une légère élévation */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.7);
+
+    /* Transition douce pour les animations */
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-h3 {
-    font-family: "Zen Dots", sans-serif;
-    font-size: 1.5rem; /* Taille de police */
-    color: #ffffff; /* Couleur blanche */
-    margin: 10px 0; /* Marges verticales */
+/* Effet au survol d'un bloc */
+.bio-block:hover {
+    /* Légère élévation du bloc (10px) */
+    transform: translateY(-10px);
+
+    /* Ombre plus intense pour renforcer l'effet de survol */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+/* Texte dans chaque bloc */
+.bio-block p {
+    /* Suppression des marges par défaut */
+    margin: 0;
+
+    /* Taille du texte légèrement augmentée pour une meilleure lisibilité */
+    font-size: 1.2rem;
+
+    /* Espacement entre les lignes */
+    line-height: 1.8;
+
+    /* Couleur blanche pour le texte */
+    color: #fff;
+}
+
+/* Accentuation */
+.bio-block strong {
+    /* Couleur accentuée (orange clair) pour le texte en gras */
+    color: #f4a261;
+    
+    /* Met en valeur le texte en gras */
+    font-weight: bold;
 }
 
 /* Conteneur de la grille d'images */
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(13, 1fr); /* 5 colonnes égales */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* 5 colonnes égales */
     gap: 16px; /* Espace entre les éléments */
     width: 100%;
     max-width: 2000px;
     padding: 16px; /* Espacement intérieur pour éviter que le contenu touche les bords */
     box-sizing: border-box; /* Assure que le padding ne dépasse pas la largeur totale */
+    
 }
+
 
 /* Style des éléments de la grille */
 .image-item {
