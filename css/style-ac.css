@@ -146,8 +146,11 @@ h1 {
 .image-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* 5 colonnes égales */
+    justify-content: center;
     gap: 16px; /* Espace entre les éléments */
     width: 100%;
+    aspect-ratio: 1;
+    object-fit: contain;
     max-width: 2000px;
     padding: 16px; /* Espacement intérieur pour éviter que le contenu touche les bords */
     box-sizing: border-box; /* Assure que le padding ne dépasse pas la largeur totale */
@@ -163,7 +166,6 @@ h1 {
     overflow: hidden;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    aspect-ratio: 1;
     background-color: white; /* Couleur de fond spécifique pour chaque case */
 }
 
