@@ -1,187 +1,242 @@
-/* PAGE INDEX */
-/* Styles de base pour le corps de la page */
+/* Styles pour mobile */
 body {
-    /* Image de fond avec positionnement centré et couverture totale */
-	background-image: url('../images/code.jpg');
-	background-size: cover;
-  	background-position: center;
-  	/* Police principale pour tout le contenu de la page */
-	font-family: "Kanit", sans-serif;
-  	/* Poids de la police défini à light par défaut */
-	font-weight: 300;
-  	/* Nécessaire pour positionner correctement les éléments relatifs */
-	position: relative;
+    background-image: url('../images/code.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    position: relative;
+    overflow-x: auto;
 }
 
-/* Superposition sombre semi-transparente sur tout le corps */
+html, body {
+    height: auto;
+}
+
 body::before {
-  /* Contenu vide utilisé pour l'effet de superposition */
-  content: "";
-  position: absolute;
-  /* Étend la superposition pour couvrir tout l'écran */
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  /* Couleur noire semi-transparente */
-  background: rgba(0, 0, 0, 0.5);
-  background-size: cover;
-
-  filter: blur(8px);
-  /* Place la superposition derrière le contenu principal */
-  z-index: -1;
-  background-position: center;
-}
-
-/* Conteneur principal pour la mise en page */
-.container {
-	display: flex; /* Active la flexbox */
-	flex-direction: row;
-	height: 100vh; /* Hauteur égale à la hauteur de la fenêtre */
-}
-
-/* Rangée générique prenant toute la largeur */
-.row {
-	display: flex;
-	width: 100%; /* Largeur totale */
-}
-
-/* Section de gauche prenant 80% de la largeur */
-.gauche {
-	width: 80%; /* Largeur occupée */
-	text-align: center; /* Centrage horizontal du texte */
-	padding-top: calc(15% - 10px); /* Espacement du contenu depuis le haut */
-}
-
-/* Style pour le logo globe */
-.globe-logo {
-	width: 13%; /* Largeur fixe */
-	height: auto; /* Garde le ratio de l'image */
-}
-
-/* Style pour les titres de niveau 1 */
-h1 {
-	font-family: "Zen Dots", sans-serif; /* Police décorative */
-	font-size: 3.5rem; /* Taille de police */
-	color: #fff; /* Couleur blanche */
-	margin: 10px 0; /* Marges verticales */
-}
-
-/* Style pour les titres de niveau 2 */
-h2 {
-	font-family: "Zen Dots", sans-serif; /* Même police décorative */
-	font-size: 2.5rem; /* Taille de police plus petite */
-	color: #b3582c; /* Couleur marron orangé */
-	margin: 1% 0; /* Marges verticales */
-}
-
-/* Image de code dans la section gauche */
-.code-image {
-	width: 80%; /* Largeur proportionnelle */
-	margin-top: 50%; /* Espacement en haut */
-}
-
-/* Section de droite occupant 20% avec un dégradé visuel */
-.droite {
-    width: 20%; /* Largeur occupée */
-    /* Dégradé de couleurs du transparent au bleu avec opacité croissante */
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 0.1) 10%, rgba(0, 0, 0, 0.2) 20%, rgba(53,51,205,0.3) 30%, rgba(53,51,205,0.4) 40%, rgba(53,51,205,0.5) 50%, rgba(53,51,205,0.6) 60%, rgba(53,51,205,0.7) 70%, rgba(53,51,205,0.8) 80%, rgba(53,51,205,0.9) 90%, rgba(53,51,205,1) 100%);
-    display: flex; /* Flexbox pour le contenu */
-    flex-direction: column; /* Contenu empilé verticalement */
-    justify-content: center; /* Centré verticalement */
-    position: fixed; /* Fixe la position sur le côté droit */
+    content: "";
+    position: absolute;
     top: 0;
+    left: 0;
     right: 0;
-    height: 100%; /* Hauteur totale de la fenêtre */
-    padding: 2%; /* Espacement intérieur */
-    z-index: 10; /* Placé au-dessus des autres éléments */
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    filter: blur(8px);
+    z-index: -1;
 }
 
-/* Menu dans la section de droite */
+.container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.gauche {
+    width: 100%;
+    text-align: center;
+    padding: 10% 5%;
+}
+
+.globe-logo {
+    width: 30%;
+    height: auto;
+}
+
+h1 {
+    font-family: "Zen Dots", sans-serif;
+    font-size: 2.5rem;
+    color: #fff;
+    margin: 1% 0;
+}
+
+h2 {
+    font-family: "Zen Dots", sans-serif;
+    font-size: 2rem;
+    color: #b3582c;
+    margin: 1% 0;
+}
+
+.droite {
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(53,51,205,1) 0%, rgba(53,51,205,0.8) 100%);
+    padding: 5%;
+}
+
 .menu {
-	text-align: right; /* Alignement à droite */
-	width: 100%; /* Largeur totale */
+    text-align: center;
 }
 
-/* Liens dans le menu */
 .menu a {
-	font-size: 1.4rem; /* Taille des liens */
-	color: #fff; /* Couleur blanche */
-	text-decoration: none; /* Supprime le soulignement */
-	margin: 5% 0; /* Marges verticales */
-	display: block; /* Prend toute la largeur */
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+    margin: 5% 0;
+    display: block;
 }
 
-/* Effet au survol des liens */
-.menu a:hover {
-    font-weight: bold; /* Gras au survol */
-}
-
-/* Ligne de séparation dans le menu */
 .menu hr {
-    width: 60%; /* Largeur réduite */
-    border: none; /* Supprime les bordures par défaut */
-    border-top: 1px solid #fff; /* Ligne blanche fine */
-    margin-left: 40%; /* Centré à droite */
-}
-
-/* Icône du menu (hamburger) */
-.menu-icon {
-	display: flex; /* Flexbox pour les barres */
-	flex-direction: column; /* Empile les barres verticalement */
-	justify-content: space-between; /* Espacement entre les barres */
-	height: 20px; /* Hauteur totale */
-}
-
-/* Barre individuelle de l'icône */
-.menu-icon .bar {
-	width: 20px; /* Largeur fixe */
-	height: 4px; /* Épaisseur de la barre */
-	background-color: #fff; /* Couleur blanche */
-}
-
-/* POLICE ECRITURE */
-
-/* Déclinaisons des styles pour les polices "Zen Dots" et "Kanit" */
-
-/* Police Zen Dots en style régulier */
-.zen-dots-regular {
-	font-family: "Zen Dots", serif;
-	font-weight: 400; /* Poids régulier */
-	font-style: normal; /* Style normal */
+    width: 80%;
+    border: none;
+    border-top: 1px solid #fff;
+    margin: 10px auto;
 }
 
 .button {
-	padding: 10px 20px;
-	background-color: #007BFF;
-	color: white;
-	border: none;
-	cursor: pointer;
-	border-radius: 5px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    margin: 20px auto;
 }
 
 .button:hover {
-	background-color: #0056b3;
+    background-color: #0056b3;
 }
 
-/* Variations de la police Kanit par poids et style */
-.kanit-thin { font-family: "Kanit", serif; font-weight: 100; font-style: normal; }
-.kanit-extralight { font-family: "Kanit", serif; font-weight: 200; font-style: normal; }
-.kanit-light { font-family: "Kanit", serif; font-weight: 300; font-style: normal; }
-.kanit-regular { font-family: "Kanit", serif; font-weight: 400; font-style: normal; }
-.kanit-medium { font-family: "Kanit", serif; font-weight: 500; font-style: normal; }
-.kanit-semibold { font-family: "Kanit", serif; font-weight: 600; font-style: normal; }
-.kanit-bold { font-family: "Kanit", serif; font-weight: 700; font-style: normal; }
-.kanit-extrabold { font-family: "Kanit", serif; font-weight: 800; font-style: normal; }
-.kanit-black { font-family: "Kanit", serif; font-weight: 900; font-style: normal; }
+/* Styles par défaut pour mobile */
+body {
+    background-image: url('../images/code.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    position: relative;
+    overflow-x: hidden;
+}
 
-/* Variations italique pour chaque poids */
-.kanit-thin-italic { font-family: "Kanit", serif; font-weight: 100; font-style: italic; }
-.kanit-extralight-italic { font-family: "Kanit", serif; font-weight: 200; font-style: italic; }
-.kanit-light-italic { font-family: "Kanit", serif; font-weight: 300; font-style: italic; }
-.kanit-regular-italic { font-family: "Kanit", serif; font-weight: 400; font-style: italic; }
-.kanit-medium-italic { font-family: "Kanit", serif; font-weight: 500; font-style: italic; }
-.kanit-semibold-italic { font-family: "Kanit", serif; font-weight: 600; font-style: italic; }
-.kanit-bold-italic { font-family: "Kanit", serif; font-weight: 700; font-style: italic; }
-.kanit-extrabold-italic { font-family: "Kanit", serif; font-weight: 800; font-style: italic; }
-.kanit-black-italic { font-family: "Kanit", serif; font-weight: 900; font-style: italic; }
+html, body {
+    height: auto;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    filter: blur(8px);
+    z-index: -1;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.gauche {
+    width: 100%;
+    text-align: center;
+    padding: 15% 5%;
+}
+
+.globe-logo {
+    width: 50%;
+    height: auto;
+}
+
+h1 {
+    font-family: "Zen Dots", sans-serif;
+    font-size: 2rem;
+    color: #fff;
+    margin: 1% 0;
+}
+
+h2 {
+    font-family: "Zen Dots", sans-serif;
+    font-size: 1.5rem;
+    color: #b3582c;
+    margin: 1% 0;
+}
+
+.droite {
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(53, 51, 205, 1) 0%, rgba(53, 51, 205, 0.8) 100%);
+    padding: 10%;
+}
+
+.menu {
+    text-align: center;
+}
+
+.menu a {
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+    margin: 5% 0;
+    display: block;
+}
+
+.menu hr {
+    width: 80%;
+    border: none;
+    border-top: 1px solid #fff;
+    margin: 10px auto;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    margin: 20px auto;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* --- STYLES POUR LES ÉCRANS PLUS GRANDS --- */
+@media screen and (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+        height: 100vh;
+    }
+
+    .gauche, .droite {
+        width: 50%;
+        padding: 5%;
+    }
+
+    .gauche {
+        text-align: left;
+    }
+
+    .globe-logo {
+        width: 30%;
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin: 2% 0;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    .menu {
+        padding: 20px 10%;
+    }
+
+    .menu a {
+        font-size: 1.5rem;
+        margin: 10% 0;
+    }
+
+    .menu hr {
+        width: 60%;
+    }
+}

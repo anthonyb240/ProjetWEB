@@ -1,129 +1,189 @@
- /* présentations.css */
-
 /* Style global */
 html, body {
+    /* Police globale du document, utilisant la police "Kanit" */
     font-family: 'Kanit', sans-serif;
+
+    /* Suppression des marges et paddings par défaut */
     margin: 0;
     padding: 0;
-    background: black; /* Fond noir pur */
-    color: white;
-    height: 100%; /* S'assurer que le body prend toute la hauteur */
+
+    /* Fond noir pour la page entière */
+    background: #000;
+
+    /* Couleur du texte blanche pour contraste avec le fond */
+    color: #fff;
+
+    /* Hauteur totale de la page */
+    height: 100%;
+
+    /* Utilisation de Flexbox pour structurer les éléments principaux */
     display: flex;
-    flex-direction: column; /* Permet de gérer la hauteur avec flexbox */
+    flex-direction: column; /* Les éléments seront empilés verticalement */
 }
 
-/* En-tête principal avec dégradé */
+/* Titre principal */
 h1 {
-    text-align: right;
-    background: linear-gradient(90deg, black, #2B2B7B, #4C4CFF); /* Dégradé partant du noir */
+    /* Centrage horizontal du texte */
+    text-align: center;
+
+    /* Dégradé en fond horizontal allant du noir au bleu */
+    background: linear-gradient(90deg, #000, #2B2B7B, #4C4CFF);
+
+    /* Suppression des marges par défaut */
     margin: 0;
-    padding: 50px 0; /* Augmenter le padding pour un en-tête plus grand */
-    padding-right: 50px;
-    font-size: 4rem; /* Augmenter la taille de la police de l'en-tête */
+
+    /* Espacement interne au-dessus et en-dessous du texte */
+    padding: 30px 0;
+
+    /* Taille du texte très grande pour un titre principal */
+    font-size: 4rem;
+
+    /* Conversion du texte en majuscules */
     text-transform: uppercase;
-    font-family: "Zen Dots";
+
+    /* Police spécifique pour le titre (Zen Dots) */
+    font-family: 'Zen Dots', sans-serif;
+
+    /* Épaisseur du texte */
     font-weight: 600;
-    color: white;
+
+    /* Couleur du texte blanche */
+    color: #fff;
+
+    /* Ombre sous le titre pour un effet 3D */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Conteneur principal */
+/* Section principale */
 .bio-text {
-    display: flex; /* Mise en page avec l'image à gauche */
-    gap: 40px; /* Espacement entre image et texte */
-    align-items: center; /* Aligne les blocs de texte en haut par rapport à l'image */
-    flex: 1; /* Laissez ce conteneur occuper tout l'espace restant */
+    /* Activation de Flexbox pour organiser les éléments enfants */
+    display: flex;
+
+    /* Permet le retour à la ligne des éléments si l'espace est insuffisant */
+    flex-wrap: wrap;
+
+    /* Espacement entre les éléments enfants */
+    gap: 30px;
+
+    /* Centre les éléments sur l'axe vertical */
+    align-items: center;
+
+    /* Centre le conteneur sur la page */
     margin: 0 auto;
+
+    /* Espacement interne autour du contenu */
     padding: 50px;
-    max-width: 1400px; /* Ajuster la largeur maximale du contenu */
+
+    /* Largeur maximale du conteneur */
+    max-width: 1200px;
 }
 
-/* Image principale */
+/* Image */
 .bio-text img {
-    width: 500px; /* Augmenter la taille de l'image */
+    /* Largeur fixe de l'image */
+    width: 400px;
+
+    /* Ajuste la hauteur automatiquement pour conserver les proportions */
     height: auto;
+
+    /* Adapte l'image pour qu'elle remplisse son conteneur tout en évitant la déformation */
     object-fit: cover;
-    border: 3px solid white; /* Bordure blanche autour de l'image */
-    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.7); /* Ombre plus forte */
-    align-self: center;
+
+    /* Bordure blanche autour de l'image */
+    border: 5px solid white;
+
+    /* Ombre portée pour donner de la profondeur */
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.7);
+
+    /* Bords arrondis */
+    border-radius: 15px;
 }
 
-/* Conteneur des blocs de texte */
+/* Conteneur des blocs */
 .text-container {
-    flex: 1; /* Le texte occupe tout l'espace restant */
+    /* Permet une extension flexible de l'espace */
+    flex: 1;
+
+    /* Utilise Flexbox pour disposer les blocs en colonne */
     display: flex;
     flex-direction: column;
-    gap: 40px; /* Espacement entre les blocs */
-    align-items: flex-start;
+
+    /* Espacement vertical entre les blocs */
+    gap: 20px;
 }
 
-/* Bloc individuel avec un fond dégradé */
+/* Bloc individuel */
 .bio-block {
-    padding: 40px;
-    border-radius: 15px;
-    background: linear-gradient(135deg, black, #2B2B7B, #4C4CFF); /* Dégradé avec noir */
-    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.8); /* Ombre encore plus marquée */
+    /* Espacement interne autour du contenu */
+    padding: 20px;
+
+    /* Bords arrondis pour un effet plus doux */
+    border-radius: 10px;
+
+    /* Fond en dégradé diagonal (noir vers bleu) */
+    background: linear-gradient(135deg, #000, #2B2B7B, #4C4CFF);
+
+    /* Ombre portée pour créer une légère élévation */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.7);
+
+    /* Transition douce pour les animations */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Effet au survol d'un bloc */
+.bio-block:hover {
+    /* Légère élévation du bloc (10px) */
+    transform: translateY(-10px);
+
+    /* Ombre plus intense pour renforcer l'effet de survol */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.8);
 }
 
 /* Texte dans chaque bloc */
 .bio-block p {
+    /* Suppression des marges par défaut */
     margin: 0;
-    font-size: 1.5rem; /* Texte beaucoup plus grand */
-    line-height: 2;
-    color: white;
+
+    /* Taille du texte légèrement augmentée pour une meilleure lisibilité */
+    font-size: 1.2rem;
+
+    /* Espacement entre les lignes */
+    line-height: 1.8;
+
+    /* Couleur blanche pour le texte */
+    color: #fff;
 }
 
-/* Accentuation des mots-clés */
+/* Accentuation */
 .bio-block strong {
-    color: #b3582c; /* Accentuation en doré */
+    /* Couleur accentuée (orange clair) pour le texte en gras */
+    color: #f4a261;
+
+    /* Met en valeur le texte en gras */
     font-weight: bold;
 }
 
-/* Responsive (petits écrans) */
+/* Responsive */
+/* Règles spécifiques pour les écrans de largeur inférieure ou égale à 768px */
 @media (max-width: 768px) {
     .bio-text {
-        flex-direction: column; /* Image au-dessus du texte */
+        /* Les éléments sont empilés verticalement sur petits écrans */
+        flex-direction: column;
+
+        /* Texte centré pour un meilleur alignement visuel */
         text-align: center;
     }
 
     .bio-text img {
-        width: 350px; /* Taille de l'image encore plus grande pour les petits écrans */
-        margin: 0 auto 30px; /* Centrer l'image */
-    }
+        /* Réduction de la taille des images */
+        width: 300px;
 
-    .text-container {
-        align-items: center; /* Centrer les blocs de texte */
+        /* Centre les images sur l'écran */
+        margin: 0 auto;
     }
 
     h1 {
-        font-size: 3rem; /* Réduire légèrement la taille de l'en-tête sur mobile */
-        padding: 40px 0;
+        /* Réduction de la taille du titre principal */
+        font-size: 3rem;
     }
 }
-/* Police Zen Dots en style régulier */
-.zen-dots-regular {
-	font-family: "Zen Dots", serif;
-	font-weight: 400; /* Poids régulier */
-	font-style: normal; /* Style normal */
-}
-
-/* Variations de la police Kanit par poids et style */
-.kanit-thin { font-family: "Kanit", serif; font-weight: 100; font-style: normal; }
-.kanit-extralight { font-family: "Kanit", serif; font-weight: 200; font-style: normal; }
-.kanit-light { font-family: "Kanit", serif; font-weight: 300; font-style: normal; }
-.kanit-regular { font-family: "Kanit", serif; font-weight: 400; font-style: normal; }
-.kanit-medium { font-family: "Kanit", serif; font-weight: 500; font-style: normal; }
-.kanit-semibold { font-family: "Kanit", serif; font-weight: 600; font-style: normal; }
-.kanit-bold { font-family: "Kanit", serif; font-weight: 700; font-style: normal; }
-.kanit-extrabold { font-family: "Kanit", serif; font-weight: 800; font-style: normal; }
-.kanit-black { font-family: "Kanit", serif; font-weight: 900; font-style: normal; }
-
-/* Variations italique pour chaque poids */
-.kanit-thin-italic { font-family: "Kanit", serif; font-weight: 100; font-style: italic; }
-.kanit-extralight-italic { font-family: "Kanit", serif; font-weight: 200; font-style: italic; }
-.kanit-light-italic { font-family: "Kanit", serif; font-weight: 300; font-style: italic; }
-.kanit-regular-italic { font-family: "Kanit", serif; font-weight: 400; font-style: italic; }
-.kanit-medium-italic { font-family: "Kanit", serif; font-weight: 500; font-style: italic; }
-.kanit-semibold-italic { font-family: "Kanit", serif; font-weight: 600; font-style: italic; }
-.kanit-bold-italic { font-family: "Kanit", serif; font-weight: 700; font-style: italic; }
-.kanit-extrabold-italic { font-family: "Kanit", serif; font-weight: 800; font-style: italic; }
-.kanit-black-italic { font-family: "Kanit", serif; font-weight: 900; font-style: italic; }
