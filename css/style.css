@@ -1,175 +1,430 @@
-/* PAGE INDEX */
-/* Styles de base pour le corps de la page */
-body {
-    /* Image de fond avec positionnement centré et couverture totale */
-	background-image: url('../images/code.jpg');
-	background-size: cover;
-  	background-position: center;
-  	/* Police principale pour tout le contenu de la page */
-	font-family: "Kanit", sans-serif;
-  	/* Poids de la police défini à light par défaut */
-	font-weight: 300;
-  	/* Nécessaire pour positionner correctement les éléments relatifs */
-	position: relative;
-}
-
-html, body {
+.index_html {
 	overflow: hidden;
 	height:100%;
 	position:relative;
 }
 
-/* Superposition sombre semi-transparente sur tout le corps */
-body::before {
-  /* Contenu vide utilisé pour l'effet de superposition */
+.index_body {
+	background-image: url('../images/image_index.jpg');
+	background-size: cover;
+  	background-position: center;
+	font-family: "Kanit", sans-serif;
+	font-weight: 300;
+	position: relative;
+}
+
+.index_body::before {
   content: "";
   position: absolute;
-  /* Étend la superposition pour couvrir tout l'écran */
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  /* Couleur noire semi-transparente */
   background: rgba(0, 0, 0, 0.5);
   background-size: cover;
 
   filter: blur(8px);
-  /* Place la superposition derrière le contenu principal */
   z-index: -1;
   background-position: center;
 }
 
-/* Conteneur principal pour la mise en page */
-.container {
-	display: flex; /* Active la flexbox */
-	flex-direction: row;
-	height: 100vh; /* Hauteur égale à la hauteur de la fenêtre */
-}
-
-/* Rangée générique prenant toute la largeur */
-.row {
+.index_container {
 	display: flex;
-	width: 100%; /* Largeur totale */
+	flex-direction: row;
+	height: 100vh;
 }
 
-/* Section de gauche prenant 80% de la largeur */
-.gauche {
-	width: 80%; /* Largeur occupée */
-	text-align: center; /* Centrage horizontal du texte */
-	padding-top: calc(15% - 1%); /* Espacement du contenu depuis le haut */
+.index_row {
+	display: flex;
+	width: 100%;
 }
 
-/* Style pour le logo globe */
-.globe-logo {
-	width: 13%; /* Largeur fixe */
-	height: auto; /* Garde le ratio de l'image */
+.index_gauche {
+	width: 80%;
+	text-align: center;
+	padding-top: calc(15% - 1%);
 }
 
-/* Style pour les titres de niveau 1 */
-h1 {
-	font-family: "Zen Dots", sans-serif; /* Police décorative */
-	font-size: 3.5rem; /* Taille de police */
-	color: #fff; /* Couleur blanche */
-	margin: 1% 0; /* Marges verticales */
+.index_globe-logo {
+	width: 13%;
+	height: auto;
 }
 
-/* Style pour les titres de niveau 2 */
-h2 {
-	font-family: "Zen Dots", sans-serif; /* Même police décorative */
-	font-size: 2.5rem; /* Taille de police plus petite */
-	color: #b3582c; /* Couleur marron orangé */
-	margin: 1% 0; /* Marges verticales */
+.index_h1 {
+	font-family: "Zen Dots", sans-serif;
+	font-size: 3.5rem;
+	color: #fff;
+	margin: 1% 0;
 }
 
-/* Image de code dans la section gauche */
-.code-image {
-	width: 80%; /* Largeur proportionnelle */
-	margin-top: 50%; /* Espacement en haut */
+.index_h2 {
+	font-family: "Zen Dots", sans-serif;
+	font-size: 2.5rem;
+	color: #b3582c;
+	margin: 1% 0;
 }
 
-/* Section de droite occupant 20% avec un dégradé visuel */
-.droite {
-    width: 20%; /* Largeur occupée */
-    /* Dégradé de couleurs du transparent au bleu avec opacité croissante */
+.index_droite {
+    width: 20%;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 0.1) 10%, rgba(0, 0, 0, 0.2) 20%, rgba(53,51,205,0.3) 30%, rgba(53,51,205,0.4) 40%, rgba(53,51,205,0.5) 50%, rgba(53,51,205,0.6) 60%, rgba(53,51,205,0.7) 70%, rgba(53,51,205,0.8) 80%, rgba(53,51,205,0.9) 90%, rgba(53,51,205,1) 100%);
-    display: flex; /* Flexbox pour le contenu */
-    flex-direction: column; /* Contenu empilé verticalement */
-    justify-content: center; /* Centré verticalement */
-    position: fixed; /* Fixe la position sur le côté droit */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
     top: 0;
     right: 0;
-    height: 100%; /* Hauteur totale de la fenêtre */
-    padding: 2%; /* Espacement intérieur */
-    z-index: 10; /* Placé au-dessus des autres éléments */
+    height: 100%;
+    padding: 2%;
+    z-index: 10;
 }
 
-/* Menu dans la section de droite */
-.menu {
-	text-align: right; /* Alignement à droite */
-	width: 100%; /* Largeur totale */
+.index_menu {
+	text-align: right;
+	width: 100%;
 }
 
-/* Liens dans le menu */
-.menu a {
-	font-size: 1.4rem; /* Taille des liens */
-	color: #fff; /* Couleur blanche */
-	text-decoration: none; /* Supprime le soulignement */
-	margin: 5% 0; /* Marges verticales */
-	display: block; /* Prend toute la largeur */
+.index_menu a {
+	font-size: 1.4rem;
+	color: #fff;
+	text-decoration: none; 
+	margin: 5% 0;
+	display: block;
 }
 
-/* Effet au survol des liens */
-.menu a:hover {
-    font-weight: bold; /* Gras au survol */
+.index_menu a:hover {
+    font-weight: bold;
 }
 
-/* Ligne de séparation dans le menu */
-.menu hr {
-    width: 60%; /* Largeur réduite */
-    border: none; /* Supprime les bordures par défaut */
-    border-top: 1px solid #fff; /* Ligne blanche fine */
-    margin-left: 40%; /* Centré à droite */
+.index_menu hr {
+    width: 60%;
+    border: none;
+    border-top: 1px solid #fff;
+    margin-left: 40%;
 }
 
-/* Icône du menu (hamburger) */
-.menu-icon {
-	display: flex; /* Flexbox pour les barres */
-	flex-direction: column; /* Empile les barres verticalement */
-	justify-content: space-between; /* Espacement entre les barres */
-	height: 2%; /* Hauteur totale */
+.methode_body {
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #000;
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column; 
 }
 
-/* Barre individuelle de l'icône */
-.menu-icon .bar {
-	width: 2%; /* Largeur fixe */
-	height: 0.4%; /* Épaisseur de la barre */
-	background-color: #fff; /* Couleur blanche */
+.methode_h1 {
+    text-align: center;
+    background: linear-gradient(90deg, #000, #2B2B7B, #4C4CFF);
+    margin: 0;
+    padding: 30px 0;
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-family: 'Zen Dots', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.texte {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    margin: 0 auto;
+    padding: 50px;
+    max-width: 1200px;
+}
+
+.methode_text-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.block {
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #000, #2B2B7B, #4C4CFF);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.block:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+.block p {
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #fff;
+}
+
+.block strong {
+    color: #f4a261;
+    font-weight: bold;
+}
+
+.comptech_body {
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #000;
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.comptech_h1 {
+    text-align: center;
+    background: linear-gradient(90deg, #000, #2B2B7B, #4C4CFF);
+    margin: 0;
+    padding: 30px 0;
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-family: 'Zen Dots', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.comptech_p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #d1d1d1;
+    margin: 20px 0;
+    text-align: justify;
+    padding: 0 20px;
+}
+
+.comptech_table {
+    width: 100%;
+    border-spacing: 10px;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.comptech_th:hover {
+    background-color: #3533cd; 
+    cursor: pointer;
+    border: 3px solid #fff; 
+    border-radius: 10px;
+}
+
+.comptech_tr:nth-child(even) {
+    background: #1a1a1a;
+}
+
+.comptech_tr:nth-child(odd) {
+    background: #222;
+}
+
+.comptech_th {
+    padding: 10px;
+    background-color: #3d52d5;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.ac_body {
+	font-family: 'Kanit', sans-serif;
+	margin: 0;
+	padding: 0;
+	background: #000;
+	color: #fff;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.ac_h1 {
+    text-align: center;
+    background: linear-gradient(90deg, #000, #2B2B7B, #4C4CFF);
+    margin: 0;
+    padding: 30px 0;
+    font-size: clamp(2rem, 5vw, 4rem);
+    text-transform: uppercase;
+    font-family: 'Zen Dots', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.texte {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    margin: 0 auto;
+    padding: 50px;
+    max-width: 1200px;
+}
+
+.ac_text-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.block {
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #000, #2B2B7B, #4C4CFF);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.block:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+.block p {
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #fff;
+}
+
+.block strong {
+    color: #f4a261;
+    font-weight: bold;
+}
+
+.ac_image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 2500px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.ac_image-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    height: 150px;
+}
+
+.ac_image-item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+    border-radius: 8px;
+}
+
+.notre_equipe_body {
+	font-family: "Kanit", sans-serif;
+	margin: 0;
+	padding: 0;
+	background: black; 
+	color: white;
+	line-height: 1.6;
+	height: 100%; 
+}
+
+#notre_equipe_titre {
+	text-align: center;
+	background: linear-gradient(90deg, #000, #2B2B7B, #4C4CFF);
+	margin: 0;
+	padding: 30px 0;
+	font-size: 4rem;
+	text-transform: uppercase;
+	font-family: 'Zen Dots', sans-serif;
+	font-weight: 600;
+	color: #fff;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#notre_equipe_page {
+	flex-grow: 1;
+	overflow: hidden;
+	display: flex;
+}
+
+#notre_equipe_hand {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: auto; 
+}
+
+#notre_equipe_commentaire {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	color: #b3582c;
+	font-size: 3vw; 
+	font-weight: 600
+}
+
+#notre_equipe_instruction {
+	display:flex;
+	justify-content: center;
+	text-align: center;
+	font-style: italic;
+}
+
+.presentation_body {
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #000;
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.presentation_h1 {
+    text-align: center;
+    background: linear-gradient(90deg, #000, #2B2B7B, #4C4CFF);
+    margin: 0;
+    padding: 30px 0;
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-family: 'Zen Dots', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.presentation_img {
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+}
+
+.presentation_text-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 /* POLICE ECRITURE */
-
-/* Déclinaisons des styles pour les polices "Zen Dots" et "Kanit" */
-
-/* Police Zen Dots en style régulier */
-.zen-dots-regular {
-	font-family: "Zen Dots", serif;
-	font-weight: 400; /* Poids régulier */
-	font-style: normal; /* Style normal */
-}
-
-.button {
-	padding: 1% 2%;
-	background-color: #007BFF;
-	color: white;
-	border: none;
-	cursor: pointer;
-	border-radius: 0.5%;
-}
-
-.button:hover {
-	background-color: #0056b3;
-}
-
+.zen-dots-regular { font-family: "Zen Dots", serif; font-weight: 400; font-style: normal;}
 /* Variations de la police Kanit par poids et style */
 .kanit-thin { font-family: "Kanit", serif; font-weight: 100; font-style: normal; }
 .kanit-extralight { font-family: "Kanit", serif; font-weight: 200; font-style: normal; }
