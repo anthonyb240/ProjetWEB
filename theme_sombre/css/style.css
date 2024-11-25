@@ -148,6 +148,7 @@
 
 .nav-links a:hover {
     color: #b3582c;
+    font-weight: bold;
 }
 
 .methode_body {

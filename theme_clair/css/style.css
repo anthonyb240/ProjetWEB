@@ -204,6 +204,7 @@
 
 .nav-links a:hover {
     color: rgb(153, 54, 71);
+    font-weight: bold;
 }
 
 .h1-methode {
