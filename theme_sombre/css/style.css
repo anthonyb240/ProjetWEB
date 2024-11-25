@@ -95,6 +95,7 @@
 
 .index_menu a:hover {
     font-weight: bold;
+    color: #b3582c;
 }
 
 .index_menu hr {
@@ -146,7 +147,7 @@
 }
 
 .nav-links a:hover {
-    color: #4C4CFF;
+    color: #b3582c;
 }
 
 .methode_body {
@@ -201,7 +202,7 @@
 }
 
 .block strong {
-    color: #f4a261;
+    color: #b3582c;
     font-weight: bold;
 }
 
@@ -334,7 +335,7 @@
 }
 
 .block strong {
-    color: #f4a261;
+    color: #b3582c;
     font-weight: bold;
 }
 

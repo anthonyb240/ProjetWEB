@@ -48,7 +48,7 @@
 	font-family: "Zen Dots", sans-serif;
 	font-size: 2.5rem;
 	margin: 1% 0;
-    color: black;
+    color: rgb(153, 54, 71);
 }
 
 .index_droite {
@@ -81,6 +81,7 @@
 
 .index_menu a:hover {
     font-weight: bold;
+    color: rgb(153, 54, 71);
 }
 
 .index_menu hr {
@@ -202,7 +203,7 @@
 }
 
 .nav-links a:hover {
-    color: #00bcd4;
+    color: rgb(153, 54, 71);
 }
 
 .h1-methode {
@@ -265,7 +266,7 @@
 }
 
 .methode-block strong {
-    color: black;
+    color: rgb(153, 54, 71);
     font-weight: bold;
 }
 
@@ -311,7 +312,7 @@
 }
 
 .th-competences:hover {
-    background-color: rgba(160, 216, 255, 1); 
+    background-color: rgb(153, 54, 71); 
     cursor: pointer;
     border: 3px solid #fff;
     border-radius: 10px;
@@ -472,7 +473,7 @@
 	display: flex;
 	justify-content: center;
 	text-align: center;
-	color: rgba(160, 216, 255);
+	color: rgb(153, 54, 71);
 	font-size: 3vw; 
 	font-weight: 600
 }
