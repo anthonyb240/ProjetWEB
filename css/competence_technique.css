@@ -120,6 +120,7 @@ th:hover {
     cursor: pointer;
     border: 3px solid #fff; /* Couleur blanche et épaisseur de 3px */
     border-radius: 10px; /* Conserve les coins arrondis */
+    z-index: 1;
 }
 
 /* Lignes alternées */
@@ -196,6 +197,7 @@ h2 {
 /* Style général pour le tableau */
 table {
     width: 100%;
+    height:25%;
     border-collapse: separate;
     border-spacing: 10%;
     margin-top: 2%;
