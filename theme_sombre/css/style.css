@@ -104,6 +104,52 @@
     margin-left: 40%;
 }
 
+
+.navbar {
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(209, 209, 209, 1) 30%, rgba(160, 216, 255, 1) 60%);
+    color: #fff;
+    padding: 1% 2%;
+    position: fixed;
+    top: 0;
+    width: 97%;
+    z-index: 1000;
+    box-shadow: 0 0.2% 0.4% rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00bcd4;
+}
+
 .methode_body {
     font-family: 'Kanit', sans-serif;
     margin: 0;
