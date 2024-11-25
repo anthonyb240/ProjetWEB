@@ -409,6 +409,7 @@
     gap: 20px;
 }
 
+
 .presentation_texte {
     display: flex;
     flex-wrap: wrap;
@@ -427,10 +428,16 @@
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
+.presentation_text-container strong {
+    color: rgb(153, 54, 71);
+    font-weight: bold;
+}
+
 .presentation_block:hover {
     transform: translateY(-10px);
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.8);
 }
+
 
 .body-equipe{
 	font-family: "Kanit", sans-serif;
