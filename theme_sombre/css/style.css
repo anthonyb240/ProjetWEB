@@ -250,9 +250,8 @@
 }
 
 .comptech_th:hover {
-    background-color: #3533cd; 
+    background-color: #b3582c; 
     cursor: pointer;
-    border: 3px solid #fff; 
     border-radius: 10px;
 }
 
