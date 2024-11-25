@@ -104,6 +104,51 @@
     margin-left: 40%;
 }
 
+.navbar {
+    background: linear-gradient(to right, #000, #2B2B7B, #4C4CFF);
+    color: white;
+    padding: 1% 2%;
+    position: fixed;
+    top: 0;
+    width: 97%;
+    z-index: 1000;
+    box-shadow: 0 0.2% 0.4% rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #4C4CFF;
+}
+
 .methode_body {
     font-family: 'Kanit', sans-serif;
     margin: 0;
@@ -118,7 +163,7 @@
 .methode_h1 {
     text-align: center;
     background: linear-gradient(90deg, #000, #2B2B7B, #4C4CFF);
-    margin: 0;
+    margin-top: 4.4%;
     padding: 30px 0;
     font-size: 4rem;
     text-transform: uppercase;
@@ -126,16 +171,6 @@
     font-weight: 600;
     color: #fff;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-}
-
-.texte {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    align-items: center;
-    margin: 0 auto;
-    padding: 50px;
-    max-width: 1200px;
 }
 
 .methode_text-container {
@@ -184,7 +219,7 @@
 .comptech_h1 {
     text-align: center;
     background: linear-gradient(90deg, #000, #2B2B7B, #4C4CFF);
-    margin: 0;
+    margin-top: 4.4%;
     padding: 30px 0;
     font-size: 4rem;
     text-transform: uppercase;
@@ -251,7 +286,7 @@
 .ac_h1 {
     text-align: center;
     background: linear-gradient(90deg, #000, #2B2B7B, #4C4CFF);
-    margin: 0;
+    margin-top: 4.4%;
     padding: 30px 0;
     font-size: clamp(2rem, 5vw, 4rem);
     text-transform: uppercase;
@@ -400,7 +435,7 @@
 .presentation_h1 {
     text-align: center;
     background: linear-gradient(90deg, #000, #2B2B7B, #4C4CFF);
-    margin: 0;
+    margin-top: 4.4%;
     padding: 30px 0;
     font-size: 4rem;
     text-transform: uppercase;
