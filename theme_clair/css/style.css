@@ -337,19 +337,6 @@
     border-radius: 8px;
 }
 
-.h1-equipe {
-    text-align: center;
-    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(209, 209, 209, 1) 30%, rgba(160, 216, 255, 1) 60%);
-    margin-top: 4%;
-    padding: 2%;
-    font-size: 2rem;
-    text-transform: uppercase;
-    font-family: 'Zen Dots', sans-serif;
-    font-weight: 600;
-    color: black;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-}
-
 .presentation_body {
     font-family: 'Kanit', sans-serif;
     margin: 0;
@@ -411,6 +398,59 @@
 .presentation_block:hover {
     transform: translateY(-10px);
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+.body-equipe{
+	font-family: "Kanit", sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: whitesmoke; 
+	line-height: 1.6;
+	height: 100%; 
+}
+
+.h1-equipe {
+    text-align: center;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(209, 209, 209, 1) 30%, rgba(160, 216, 255, 1) 60%);
+    margin-top: 4%;
+    padding: 2%;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: 'Zen Dots', sans-serif;
+    font-weight: 600;
+    color: black;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+#page-equipe {
+	flex-grow: 1;
+	overflow: hidden;
+	display: flex;
+}
+
+#hand-equipe {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: auto; 
+}
+
+#commentaire {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	color: rgba(160, 216, 255);
+	font-size: 3vw; 
+	font-weight: 600
+}
+
+#instruction {
+	display:flex;
+	justify-content: center;
+	text-align: center;
+	font-style: italic;
 }
   
 /* Variations de la police Kanit par poids et style */
