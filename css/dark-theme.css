@@ -95,6 +95,7 @@
 
 .index_menu a:hover {
     font-weight: bold;
+    color: #b3582c;
 }
 
 .index_menu hr {
@@ -188,9 +189,8 @@
 }
 
 .comptech_th:hover {
-    background-color: #3533cd; 
+    background-color: #b3582c; 
     cursor: pointer;
-    border: 3px solid #fff; 
     border-radius: 10px;
 }
 
@@ -399,7 +399,7 @@
 }
 
 .nav-links a:hover {
-    color: #4C4CFF;
+    color: #b3582c;
 }
 
 .Barre_de_recherche input[type="text"]{
