@@ -48,7 +48,7 @@
 	font-family: "Zen Dots", sans-serif;
 	font-size: 2.5rem;
 	margin: 1% 0;
-    color: black;
+    color: #ff004c;
 }
 
 .index_droite {
@@ -81,6 +81,7 @@
 
 .index_menu a:hover {
     font-weight: bold;
+    color: #ff004c;
 }
 
 .index_menu hr {
@@ -166,7 +167,7 @@
 
 .comptech_th {
     padding: 15px;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(209, 209, 209, 1) 30%, rgba(160, 216, 255, 1) 60%);
+    background-color: rgba(160, 216, 255, 1);
     color: black;
     border-radius: 10px;
     font-weight: 600;
@@ -175,7 +176,7 @@
 }
 
 .comptech_th:hover {
-    background-color: rgba(160, 216, 255, 1); 
+    background-color: #ff004c; 
     cursor: pointer;
     border: 3px solid #fff;
     border-radius: 10px;
@@ -330,7 +331,7 @@
 	display: flex;
 	justify-content: center;
 	text-align: center;
-	color: rgba(160, 216, 255);
+	color: #ff004c;
 	font-size: 3vw; 
 	font-weight: 600
 }
@@ -373,7 +374,7 @@
 }
 
 .block strong {
-    color: black;
+    color: #ff004c;
     font-weight: bold;
 }
 
@@ -419,7 +420,8 @@
 }
 
 .nav-links a:hover {
-    color: #00bcd4;
+    color: #ff004c;
+    font-weight: bold;
 }
 
 .checkbox:checked + label:after{
