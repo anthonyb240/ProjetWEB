@@ -402,6 +402,44 @@
     color: #4C4CFF;
 }
 
+.Barre_de_recherche input[type="text"]{
+    width: 300px;
+    padding: 8px;
+    font-size: 13pt;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+}
+
+.Barre_de_recherche input[type="submit"]{
+    width: 50px;
+    padding: 0px;
+    font-size: 13pt;
+    margin-left: -50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+#resultats {
+    margin-top: 10px;
+    width: 320px;
+    padding: 15px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: none; /* Masqué par défaut */
+}
+
+.resultats-cache {
+    display: none;
+}
+
+.resultats-visible {
+    display: block;
+}
+
 .texte {
     display: flex;
     flex-wrap: wrap;
