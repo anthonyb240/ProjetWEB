@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
+    <link id="theme-link" rel="stylesheet" href="../css/dark-theme.css">
+=======
+>>>>>>> 36257024ba478c7b077647135e48f01de832197e
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Zen+Dots&display=swap" rel="stylesheet">
@@ -50,6 +54,11 @@
         </div>
     </nav>
     
+<<<<<<< HEAD
+</body> 
+<script src="../js/script.js"></script>
+
+=======
     <style> 
 .signup_body{
     font-family: 'Kanit', sans-serif;
@@ -156,5 +165,6 @@
 .kanit-bold-italic { font-family: "Kanit", serif; font-weight: 700; font-style: italic; }
 .kanit-extrabold-italic { font-family: "Kanit", serif; font-weight: 800; font-style: italic; }
 .kanit-black-italic { font-family: "Kanit", serif; font-weight: 900; font-style: italic; }
+>>>>>>> 36257024ba478c7b077647135e48f01de832197e
 </body>
 </html>
