@@ -435,7 +435,7 @@
     display: inline-block;
     height: 30px;
     width: 2.5%;
-    background: #4141d2;
+    background: rgba(160, 216, 255);
     position: relative;
     transition: all .3s;
     border-radius: 60px;
@@ -458,7 +458,7 @@
 }
 
 .checkbox:checked + label{
-    background: rgba(160, 216, 255);
+    background: #4141d2;
 }
   
 /* Variations de la police Kanit par poids et style */
