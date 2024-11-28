@@ -30,20 +30,7 @@
         </div>
     </nav>
 
-    <div class= "container" id= "login">
-    <div class= "block" id= "login_block">
-        <form method="POST" action=""> 
-        <label form="email">Email</label>
-        <input type="email" placeholder="Entrez votre email..." id="email" name="email" required>
-        </br>
-        <label form="password">Mot de passe</label>
-        <input type="password" placeholder="Entrez votre mot de passe..." id="password" name="password" required>
-</br>
-        <input type="submit" value="Se connecter" name="ok">
-        </form>
-    </div
-</div>
-<script src="../js/script.js"></script>
+
 <?php 
     $servername = "localhost";
     $username = "root";
@@ -61,7 +48,7 @@
         $email = $_POST['email'];
         $pass = $_POST['password'];
         if($email !="" && $pass != ""){
-            $req = $bdd->query("SELECT * FROM users WHERE email = '$email' AND mdp = '$pass'");
+            $req = $bdd->query("SELECT * FROM users WHERE email = '$email' AND mdp = MD5('$pass')");
             $rep = $req->fetch();
             if($rep['id'] != false){
                 header("Location: ../html/index.html");
@@ -74,13 +61,31 @@
     }
 ?>
 
-    <?php 
-    $error_msg = "Email ou mdp incorrect";
-    if($error_msg){
-        ?>
-        <p><?php echo $error_msg; ?></p>
-        <?php
-    }
+<div class="login_form">
+    <h1>Connectez-vous !</h1>
+    <form method="POST" action="">
+        <label for="email">Votre Email :</label>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+
+        <label for="password">Votre Mot de Passe :</label>
+        <input type="password" id="password" name="password" placeholder="Mot de Passe" required>
+
+        <input type="submit" value="Se connecter" name="ok">
+    </form>
+</div>
+
+<script src="../js/script.js"></script>
+
+<?php
+$error_msg = "Email ou mdp incorrect";
+if($error_msg){
     ?>
+    <p><?php echo $error_msg; ?></p> 
+    <?php
+}
+?>
+
+
+
 </body>
 </html>

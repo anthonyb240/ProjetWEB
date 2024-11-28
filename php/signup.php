@@ -11,33 +11,29 @@
     <title>BTTS - Inscription</title>
 </head>
 
-<body class = "signup_body">
-<div class = "container" id= "titre_signup">
-    <h1> Remplissez le formulaire avec vos informations</h1> 
-</div>
-<div class ="container" id= "signup">
-    <div class = "block" id="signup_block">
-    <form method="POST" action="traitement.php">
-        <label>Votre Nom</label>
-        <input type="text" id="nom" name="nom", placeholder="Entrer votre Nom..." required>
-        </br>
-        <label>Votre Prénom</label>
-        <input type="text" id="prenom" name="prenom", placeholder="Entrer votre Prénom..." required>
-        </br>
-        <label>Votre email</label>
-        <input type="text" id="email" name="email", placeholder="Entrer votre email..." required>
-        </br>
-        <label>Votre pseudo</label>
-        <input type="text" id="pseudo" name="pseudo", placeholder="Entrer votre pseudo..." required>
-        </br>
-        <label>Votre mot de passe</label>
-        <input type="password" id="mdp" name="mdp", placeholder="entrer votre mot de passe..." required>
-        </br>
-        <input type="submit" value="M'inscrire" name="ok">
-    </form>
+<body class="signup_body">
+    <div class="signup_form">
+        <h1>Remplissez le formulaire avec vos informations</h1>
+        <form method="POST" action="">
+            <label for="nom">Votre Nom :</label>
+            <input type="text" id="nom" name="nom" placeholder="Nom" required>
+
+            <label for="prenom">Votre Prénom :</label>
+            <input type="text" id="prenom" name="prenom" placeholder="Prénom" required>
+
+            <label for="email">Votre Email :</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+
+            <label for="pseudo">Votre Pseudo :</label>
+            <input type="text" id="pseudo" name="pseudo" placeholder="Pseudo" required>
+
+            <label for="mdp">Votre Mot de Passe :</label>
+            <input type="password" id="mdp" name="mdp" placeholder="Mot de Passe" required>
+
+            <input type="submit" value="M'inscrire" name="ok">
+        </form>
     </div>
-</div>
-<nav class="navbar">
+    <nav class="navbar">
         <div class="nav-container">
             <a href="index.html" class="nav-logo">BACK TO THE STACK</a>
             <ul class="nav-links">
@@ -52,8 +48,40 @@
             </ul>
         </div>
     </nav>
-    
-</body> 
+
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "root";
+
+try {
+    $bdd = new PDO("mysql:host=$servername;dbname=utilisateurs", $username, $password);
+    $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+}
+catch(PDOException $e){
+    echo "Erreur : ".$e->getMessage();
+}
+
+if(isset($_POST['ok'])) {
+    $nom = $_POST['nom'];
+    $prenom = $_POST['prenom'];
+    $email = $_POST['email'];
+    $pseudo = $_POST['pseudo'];
+    $mdp = $_POST['mdp'];
+
+    $requete = $bdd->prepare("INSERT INTO users VALUES (0, :pseudo, :nom, :prenom, MD5(:mdp), :email)");
+    $requete->execute(
+        array(
+            "pseudo" => $pseudo,
+            "nom" => $nom,
+            "prenom" => $prenom,
+            "mdp" => $mdp,
+            "email" => $email
+        )
+    );
+    echo "Utilisateur ajouté avec succès.";
+}
+?>
 <script src="../js/script.js"></script>
 
 </body>

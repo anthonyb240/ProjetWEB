@@ -538,91 +538,153 @@
     background: #4141d2;
 }
 
-.signup_body {
-    font-family: 'Kanit', sans-serif;
+body.signup_body {
+    font-family: "Kanit", Arial, sans-serif;
+    background-color: black;
     margin: 0;
     padding: 0;
-    background: #000;
-    color: #fff;
-    height: 100%;
     display: flex;
     flex-direction: column;
-}    
-
-#titre_signup {
-    padding-top: 5%;
-    color: rgb(255, 255, 255);
-    text-align: center;
-}
-#signup {
     align-items: center;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-#signup_block {
-    padding: 20px;
-    border-radius: 10px;
-    background: linear-gradient(135deg, #000, #2B2B7B, #4C4CFF);
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.7);
-    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-#signup_block:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.8);
+.signup_form {
+    background: linear-gradient(135deg, #000, #2B2B7B, #4C4CFF);
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin-top: 12%;
+}
+
+.signup_form h1 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.signup_form label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.signup_form input[type="text"],
+.signup_form input[type="email"],
+.signup_form input[type="password"] {
+    width: 80%;
+    max-width: 300px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    margin-bottom: 15px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.signup_form input[type="text"]:focus,
+.signup_form input[type="email"]:focus,
+.signup_form input[type="password"]:focus {
+    border: 1px solid #007aff;
+}
+
+.signup_form input[type="submit"] {
+    background-color: #2B2B7B;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.signup_form input[type="submit"]:hover {
+    background-color: #005bb5;
 }
 
 .login_body {
-    font-family: 'Kanit', sans-serif;
+    font-family: "Kanit", Arial, sans-serif;
+    background-color: black;
     margin: 0;
     padding: 0;
-    background: #000;
-    color: #fff;
-    height: 100%;
     display: flex;
     flex-direction: column;
-}     
-
-#titre_login {
-    padding-top: 5%;
-    color: rgb(255, 255, 255);
-    text-align: center;
-}
-
-#login {
     align-items: center;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
 }
 
-#login_block {
-    padding: 20px;
-    border-radius: 10px;
+.login_form {
     background: linear-gradient(135deg, #000, #2B2B7B, #4C4CFF);
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.7);
-    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin-top: 100px;
 }
 
-#login_block:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.8);
-
-}
-
-.traitement_body {
-    font-family: 'Kanit', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #000;
+.login_form h1 {
     color: #fff;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}     
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.login_form label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.login_form input[type="email"],
+.login_form input[type="password"] {
+    width: 80%;
+    max-width: 300px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    margin-bottom: 15px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.login_form input[type="email"]:focus,
+.login_form input[type="password"]:focus {
+    border: 1px solid #2B2B7B;
+}
+
+.login_form input[type="submit"] {
+    background-color: #2B2B7B;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.login_form input[type="submit"]:hover {
+    background-color: #005bb5;
+}
+
+
 /* POLICE ECRITURE */
 .zen-dots-regular { font-family: "Zen Dots", serif; font-weight: 400; font-style: normal;}
 /* Variations de la police Kanit par poids et style */
