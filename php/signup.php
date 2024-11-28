@@ -35,7 +35,7 @@
     </div>
     <nav class="navbar">
         <div class="nav-container">
-            <a href="index.html" class="nav-logo">BACK TO THE STACK</a>
+            <a href="../html/index.html" class="nav-logo">BACK TO THE STACK</a>
             <ul class="nav-links">
                 <li><a href="../html/recherche.html">🔎</a></li>
                 <li><a href="login.php">Connexion</a></li>
