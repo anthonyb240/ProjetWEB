@@ -28,7 +28,11 @@
             $req = $bdd->query("SELECT * FROM users WHERE email = '$email' AND mdp = '$pass'");
             $rep = $req->fetch();
             if($rep['id'] != false){
+<<<<<<< HEAD
+                header("Location: ../html/index.html");
+=======
                 header("Location: success.php");
+>>>>>>> 35c28ddcd31d1d9f2ff238c936beb4f6b0ce7079
                 exit();
             }
             else{
