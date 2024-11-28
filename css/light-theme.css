@@ -27,9 +27,14 @@
 }
 
 .index_gauche {
-	width: 80%;
+	width: 70%;
 	text-align: center;
-	padding-top: calc(15% - 1%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 13%;
+    margin-left: 4%;
 }
 
 .index_globe-logo {
