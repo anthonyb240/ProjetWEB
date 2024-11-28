@@ -18,13 +18,14 @@
         <div class="nav-container">
             <a href="index.html" class="nav-logo">BACK TO THE STACK</a>
             <ul class="nav-links">
-                <li><a href="recherche.html">🔎</a></li>
+                <li><a href="../html/recherche.html">🔎</a></li>
+                <li><a href="login.php">Connexion</a></li>
                 <li><a href="signup.php">Inscription</a></li>
-                <li><a href="index.html">Menu Principal</a></li>
-                <li><a href="comptech.html">Compétences Techniques</a></li>
-                <li><a href="méthode.html">Méthode</a></li>
-                <li><a href="anciens clients.html">Expérience</a></li>
-                <li><a href="notreequipe.html">Équipe</a></li>
+                <li><a href="../html/index.html">Menu Principal</a></li>
+                <li><a href="../html/comptech.html">Compétences Techniques</a></li>
+                <li><a href="../html/méthode.html">Méthode</a></li>
+                <li><a href="../html/anciens clients.html">Expérience</a></li>
+                <li><a href="../html/notreequipe.html">Équipe</a></li>
             </ul>
         </div>
     </nav>
@@ -42,7 +43,7 @@
         </form>
     </div
 </div>
-
+<script src="../js/script.js"></script>
 <?php 
     $servername = "localhost";
     $username = "root";

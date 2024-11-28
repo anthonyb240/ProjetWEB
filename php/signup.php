@@ -37,16 +37,18 @@
     </form>
     </div>
 </div>
-    <nav class="navbar">
+<nav class="navbar">
         <div class="nav-container">
             <a href="index.html" class="nav-logo">BACK TO THE STACK</a>
             <ul class="nav-links">
+                <li><a href="../html/recherche.html">🔎</a></li>
+                <li><a href="login.php">Connexion</a></li>
+                <li><a href="signup.php">Inscription</a></li>
                 <li><a href="../html/index.html">Menu Principal</a></li>
-                <li><a href="../html/notreequipe.html">Équipe</a></li>
                 <li><a href="../html/comptech.html">Compétences Techniques</a></li>
-                <li><a href="../html/méthode.html">Méthodes</a></li>
+                <li><a href="../html/méthode.html">Méthode</a></li>
                 <li><a href="../html/anciens clients.html">Expérience</a></li>
-                <li><a href="../html/recherche.html">Recherche</a></li>
+                <li><a href="../html/notreequipe.html">Équipe</a></li>
             </ul>
         </div>
     </nav>

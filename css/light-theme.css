@@ -510,6 +510,11 @@
     color: black;
     text-align: center;
 }
+#titre_login {
+    padding-top: 5%;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
 #login {
     align-items: center;
     flex: 1;
@@ -528,6 +533,17 @@
 #login_block:hover {
     transform: translateY(-10px);
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+.traitement_body {
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: whitesmoke;
+    color: #000000;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
   
 /* Variations de la police Kanit par poids et style */
