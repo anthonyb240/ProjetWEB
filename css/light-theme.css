@@ -111,9 +111,9 @@
 
     .index_row {
         display: flex;
-        flex-direction: column;
+        
         width: 100%;
-        height: 50%;
+        
     }
   
     .index_gauche,
