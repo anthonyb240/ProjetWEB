@@ -3,7 +3,6 @@
 .index_html {
 	overflow: hidden;
 	height:100%;
-    width: 100%;
 	position:relative;
 }
 
@@ -111,7 +110,7 @@
     margin-left: 40%;
 }
 
-@media only screen and (max-width: 1025px) and (orientation: portrait) {
+@media (max-width: 1025px) and (orientation: portrait) {
     .select.goog-te-combo {
         display: none;
     }
@@ -200,21 +199,6 @@
     }
     .dropdown_menu{
         display: block;
-    }
-
-    #presentation_h1{
-        height: 100%;
-        width: 100%;
-    }
-
-    .presentation_body{
-        height:100%;
-        width: 100%;
-        margin-top: 0;
-        margin-bottom: 0;
-        margin-left: 0;
-        margin-right: 0;
-        overflow: hidden;
     }
 }
 
@@ -421,18 +405,16 @@
     background: #000;
     color: #fff;
     height: 100%;
-    width: 100%;
-    position:relative;
+    display: flex;
     flex-direction: column;
 }
 
-#presentation_h1 {
-  
+.presentation_h1 {
     text-align: center;
     background: linear-gradient(90deg, #000, #2B2B7B, #4C4CFF);
     margin-top: 4.4%;
     padding: 30px 0;
-    font-size: auto;
+    font-size: 4rem;
     text-transform: uppercase;
     font-family: 'Zen Dots', sans-serif;
     font-weight: 600;
