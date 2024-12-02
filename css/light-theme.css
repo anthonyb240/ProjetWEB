@@ -84,6 +84,11 @@
     color: #ff004c;
 }
 
+.index_row {
+	display: flex;
+	width: 100%;
+}
+
 .index_menu hr {
     width: 60%;
     border: none;
