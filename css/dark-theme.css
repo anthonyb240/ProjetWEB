@@ -110,7 +110,7 @@
     margin-left: 40%;
 }
 
-@media (max-width: 1025px) and (orientation: portrait) {
+@media only screen and (max-width: 1025px) and (orientation: portrait) {
     .select.goog-te-combo {
         display: none;
     }
