@@ -28,6 +28,20 @@
         </div>
     </nav>
 
+    <div class="toggle_btn">
+        <i class="fa-solid fa-bars" style="color: #ffffff;"></i>   
+    </div>
+
+    <div class="dropdown_menu">
+        <li><a href="recherche.html">🔎</a></li>
+        <li><a href="../php/login.php">Connexion</a></li>
+        <li><a href="../php/signup.php">Inscription</a></li>
+        <li><a href="index.html">Menu Principal</a></li>
+        <li><a href="comptech.html">Compétences Techniques</a></li>
+        <li><a href="méthode.html">Méthode</a></li>
+        <li><a href="anciens clients.html">Expérience</a></li>
+        <li><a href="notreequipe.html">Équipe</a></li>  
+    </div>
 
     <h1 class="presentation_h1">Anthony Broquard</h1>
 
@@ -64,6 +78,19 @@
         } 
     </script>
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+        const toggleButton = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
 
+        toggleButton.onclick = function() {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList =isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars';
+        }
+    </script>
 </body>
 </html>
